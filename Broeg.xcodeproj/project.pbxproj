@@ -14,7 +14,6 @@
 		CD39E113254ABA8500381075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD39E112254ABA8500381075 /* Assets.xcassets */; };
 		CD39E116254ABA8500381075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD39E114254ABA8500381075 /* LaunchScreen.storyboard */; };
 		CD39E121254AD4E900381075 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39E120254AD4E900381075 /* RoundedButton.swift */; };
-		CD39E127254ADC6D00381075 /* AndersStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD39E126254ADC6D00381075 /* AndersStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		CD39E115254ABA8500381075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD39E117254ABA8500381075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD39E120254AD4E900381075 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		CD39E126254ADC6D00381075 /* AndersStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AndersStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				CD39E114254ABA8500381075 /* LaunchScreen.storyboard */,
 				CD39E117254ABA8500381075 /* Info.plist */,
 				CD39E120254AD4E900381075 /* RoundedButton.swift */,
-				CD39E126254ADC6D00381075 /* AndersStoryboard.storyboard */,
 			);
 			path = Broeg;
 			sourceTree = "<group>";
@@ -130,7 +127,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD39E127254ADC6D00381075 /* AndersStoryboard.storyboard in Resources */,
 				CD39E116254ABA8500381075 /* LaunchScreen.storyboard in Resources */,
 				CD39E113254ABA8500381075 /* Assets.xcassets in Resources */,
 				CD39E111254ABA8500381075 /* Main.storyboard in Resources */,
