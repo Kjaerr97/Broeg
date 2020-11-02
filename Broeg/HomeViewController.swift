@@ -15,11 +15,9 @@ class HomeViewController: UIViewController {
     }
     
     
-    @IBAction func btnSettings(  sender: UIButton) {
-    }
-    
-    
     @IBAction func btnBroeg(_ sender: UIButton) {
+        
+        
     }
     
     

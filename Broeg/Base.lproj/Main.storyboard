@@ -78,23 +78,11 @@
                                     <action selector="btnRens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jOb-a7-pSE"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HFt-W4-whA">
-                                <rect key="frame" x="20" y="45" width="40" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="gearshape" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WQP-uP-bmM">
-                                <rect key="frame" x="354" y="44" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="btnSettings" destination="WQP-uP-bmM" id="2Pl-Mz-J9c"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="7dn-ya-7pC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,13 +110,21 @@
                     <view key="view" contentMode="scaleToFill" id="lj4-GS-ov1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVg-XN-7Ng">
+                                <rect key="frame" x="182" y="283" width="51" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tilbage"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fjW-Y2-YhR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="H4e-Aw-jAI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEN-P4-Fr5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2049" y="-285"/>
+            <point key="canvasLocation" x="2047.826086956522" y="-285.26785714285711"/>
         </scene>
         <!--ProfileViewController-->
         <scene sceneID="X1g-U3-zEn">
@@ -199,7 +195,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTg-kt-o37" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-294" y="-1254"/>
+            <point key="canvasLocation" x="455" y="-852"/>
         </scene>
     </scenes>
     <designables>
@@ -214,11 +210,6 @@
         </designable>
     </designables>
     <resources>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
-        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
