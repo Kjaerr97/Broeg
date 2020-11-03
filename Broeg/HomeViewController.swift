@@ -14,20 +14,15 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func Brew(_ sender: RoundButton) {
+    }
     
-    @IBAction func btnBroeg(_ sender: UIButton) {
-        
-        
+    @IBAction func btnRens(_ sender: RoundButton) {
     }
     
     
     
-    @IBAction func btnRens(_ sender: UIButton) {
-    }
-    
-    
-    
-    @IBAction func btnHistorik(_ sender: UIButton) {
+    @IBAction func btnHistorik(_ sender: RoundButton) {
     }
     
     

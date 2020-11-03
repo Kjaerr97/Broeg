@@ -17,10 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ty-zo-RTc" userLabel="btnBroeg" customClass="RoundButton" customModule="Broeg" customModuleProvider="target">
-                                <rect key="frame" x="49" y="220" width="317" height="90"/>
+                                <rect key="frame" x="49" y="174" width="317" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.6706059718212305" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Brøg"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Bryg kaffe"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="26"/>
@@ -33,7 +34,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnBroeg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vjR-dk-bOL"/>
+                                    <action selector="Brew:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mC9-eA-vbJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGp-0r-I0S" userLabel="btnRens" customClass="RoundButton" customModule="Broeg" customModuleProvider="target">
@@ -75,8 +76,18 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnHistorik:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LtK-y9-85U"/>
-                                    <action selector="btnRens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jOb-a7-pSE"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGK-fR-lAO">
+                                <rect key="frame" x="356" y="44" width="38" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Button" image="gearshape" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ova-O9-H2r">
+                                <rect key="frame" x="49" y="44" width="35" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="person" catalog="system"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -86,22 +97,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.98550724637681" y="81.696428571428569"/>
+            <point key="canvasLocation" x="173.91304347826087" y="208.92857142857142"/>
         </scene>
-        <!--BroegViewController-->
-        <scene sceneID="K4l-ww-ysq">
+        <!--Brew Table View Controller-->
+        <scene sceneID="LMz-gz-hSR">
             <objects>
-                <viewController title="BroegViewController" id="eLA-St-i2u" customClass="BroegViewController" customModule="Broeg" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1of-qz-vFn">
+                <tableViewController id="Ln4-RS-nYw" customClass="BrewTableViewController" customModule="Broeg" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dwt-so-V7R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="1uD-8F-MG4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CaA-0g-wf2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Uau-RL-LjK">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uau-RL-LjK" id="kVA-eu-XSp">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ln4-RS-nYw" id="9oO-KM-UEh"/>
+                            <outlet property="delegate" destination="Ln4-RS-nYw" id="KnX-gK-44P"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TjX-YJ-OeI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="737"/>
+            <point key="canvasLocation" x="874" y="209"/>
         </scene>
         <!--CleaningViewController-->
         <scene sceneID="Uge-nl-UpF">
@@ -200,7 +224,7 @@
     </scenes>
     <designables>
         <designable name="9ty-zo-RTc">
-            <size key="intrinsicContentSize" width="33" height="30"/>
+            <size key="intrinsicContentSize" width="113" height="44"/>
         </designable>
         <designable name="WGp-0r-I0S">
             <size key="intrinsicContentSize" width="34" height="30"/>
@@ -210,6 +234,8 @@
         </designable>
     </designables>
     <resources>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
