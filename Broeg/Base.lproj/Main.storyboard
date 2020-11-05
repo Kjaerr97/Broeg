@@ -173,7 +173,7 @@
                         <viewLayoutGuide key="safeArea" id="61X-Bl-uc6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4JP-jj-qvi"/>
+                    <navigationItem key="navigationItem" title="Profile" id="4JP-jj-qvi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lr8-G3-Ayn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
