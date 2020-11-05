@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		76BEE0D12551DA8600360F12 /* BrewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEE0D02551DA8600360F12 /* BrewTableViewController.swift */; };
+		8251572B1B412374D7B0F43E /* Pods_Broeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D235F1795AD9BC533D9842E /* Pods_Broeg.framework */; };
+		CD09DBE22554695000C0B594 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD09DBE12554695000C0B594 /* GoogleService-Info.plist */; };
 		CD33684C255066E9001200AC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33684B255066E9001200AC /* ProfileViewController.swift */; };
 		CD33684F255066FB001200AC /* CleaningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33684E255066FB001200AC /* CleaningViewController.swift */; };
 		CD33685225506732001200AC /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33685125506732001200AC /* HistoryTableViewController.swift */; };
@@ -22,7 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D235F1795AD9BC533D9842E /* Pods_Broeg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Broeg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47F0BEE0E645E076B6FC7472 /* Pods-Broeg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broeg.debug.xcconfig"; path = "Target Support Files/Pods-Broeg/Pods-Broeg.debug.xcconfig"; sourceTree = "<group>"; };
+		62377830481FAEB772C07329 /* Pods-Broeg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broeg.release.xcconfig"; path = "Target Support Files/Pods-Broeg/Pods-Broeg.release.xcconfig"; sourceTree = "<group>"; };
 		76BEE0D02551DA8600360F12 /* BrewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewTableViewController.swift; sourceTree = "<group>"; };
+		CD09DBE12554695000C0B594 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD33684B255066E9001200AC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CD33684E255066FB001200AC /* CleaningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningViewController.swift; sourceTree = "<group>"; };
 		CD33685125506732001200AC /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
@@ -43,17 +49,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8251572B1B412374D7B0F43E /* Pods_Broeg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F6308D07B3F847F5B36D884 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47F0BEE0E645E076B6FC7472 /* Pods-Broeg.debug.xcconfig */,
+				62377830481FAEB772C07329 /* Pods-Broeg.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CD39E0FD254ABA8400381075 = {
 			isa = PBXGroup;
 			children = (
 				CD39E108254ABA8500381075 /* Broeg */,
 				CD39E107254ABA8500381075 /* Products */,
+				3F6308D07B3F847F5B36D884 /* Pods */,
+				F438385B27516D73B2A9D72D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +94,7 @@
 				CD39E112254ABA8500381075 /* Assets.xcassets */,
 				CD39E114254ABA8500381075 /* LaunchScreen.storyboard */,
 				CD39E117254ABA8500381075 /* Info.plist */,
+				CD09DBE12554695000C0B594 /* GoogleService-Info.plist */,
 				CD39E120254AD4E900381075 /* RoundedButton.swift */,
 				CD33684B255066E9001200AC /* ProfileViewController.swift */,
 				CD33684E255066FB001200AC /* CleaningViewController.swift */,
@@ -85,6 +105,14 @@
 			path = Broeg;
 			sourceTree = "<group>";
 		};
+		F438385B27516D73B2A9D72D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D235F1795AD9BC533D9842E /* Pods_Broeg.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD39E11A254ABA8500381075 /* Build configuration list for PBXNativeTarget "Broeg" */;
 			buildPhases = (
+				9264C9D79C056A85B51A4501 /* [CP] Check Pods Manifest.lock */,
 				CD39E102254ABA8400381075 /* Sources */,
 				CD39E103254ABA8400381075 /* Frameworks */,
 				CD39E104254ABA8400381075 /* Resources */,
+				D6FCF2D7CE837E0467ACA22A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,12 +173,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD39E116254ABA8500381075 /* LaunchScreen.storyboard in Resources */,
+				CD09DBE22554695000C0B594 /* GoogleService-Info.plist in Resources */,
 				CD39E113254ABA8500381075 /* Assets.xcassets in Resources */,
 				CD39E111254ABA8500381075 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9264C9D79C056A85B51A4501 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Broeg-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6FCF2D7CE837E0467ACA22A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Broeg/Pods-Broeg-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Broeg/Pods-Broeg-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Broeg/Pods-Broeg-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD39E102254ABA8400381075 /* Sources */ = {
@@ -307,6 +380,7 @@
 		};
 		CD39E11B254ABA8500381075 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F0BEE0E645E076B6FC7472 /* Pods-Broeg.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +399,7 @@
 		};
 		CD39E11C254ABA8500381075 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62377830481FAEB772C07329 /* Pods-Broeg.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
