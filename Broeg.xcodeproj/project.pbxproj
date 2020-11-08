@@ -21,6 +21,7 @@
 		CD39E116254ABA8500381075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD39E114254ABA8500381075 /* LaunchScreen.storyboard */; };
 		CD39E121254AD4E900381075 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39E120254AD4E900381075 /* RoundedButton.swift */; };
 		CD840CAE255826CB00ECA5EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD840CAD255826CB00ECA5EB /* GoogleService-Info.plist */; };
+		CDCE59CE255858DC00DF6717 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE59CD255858DC00DF6717 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		CD39E117254ABA8500381075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD39E120254AD4E900381075 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		CD840CAD255826CB00ECA5EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CDCE59CD255858DC00DF6717 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				CD33685125506732001200AC /* HistoryTableViewController.swift */,
 				CD3368552550675E001200AC /* SettingsTableViewController.swift */,
 				76BEE0D02551DA8600360F12 /* BrewTableViewController.swift */,
+				CDCE59CD255858DC00DF6717 /* LoginViewController.swift */,
 			);
 			path = Broeg;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				CD33685225506732001200AC /* HistoryTableViewController.swift in Sources */,
 				CD39E121254AD4E900381075 /* RoundedButton.swift in Sources */,
 				CD33684F255066FB001200AC /* CleaningViewController.swift in Sources */,
+				CDCE59CE255858DC00DF6717 /* LoginViewController.swift in Sources */,
 				CD3368562550675E001200AC /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

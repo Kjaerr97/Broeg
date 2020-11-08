@@ -105,7 +105,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="person" catalog="system"/>
                                 <connections>
-                                    <segue destination="MO0-UU-RWg" kind="show" id="PJs-CQ-qhW"/>
+                                    <segue destination="MO0-UU-RWg" kind="show" id="YVy-j4-AdD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -176,6 +176,21 @@
                     <navigationItem key="navigationItem" title="Profile" id="4JP-jj-qvi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lr8-G3-Ayn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-633" y="-532"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="YcJ-Ge-nOD">
+            <objects>
+                <viewController id="30s-99-hr3" customClass="LoginViewController" customModule="Broeg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tQj-ca-PBF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aAe-jP-pAJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efV-PL-F2s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="174" y="-532"/>
         </scene>
