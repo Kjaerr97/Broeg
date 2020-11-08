@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		76BEE0D12551DA8600360F12 /* BrewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEE0D02551DA8600360F12 /* BrewTableViewController.swift */; };
+		76F4309C25583C2800712F66 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4309B25583C2800712F66 /* Coffee.swift */; };
 		8251572B1B412374D7B0F43E /* Pods_Broeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D235F1795AD9BC533D9842E /* Pods_Broeg.framework */; };
 		CD33684C255066E9001200AC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33684B255066E9001200AC /* ProfileViewController.swift */; };
 		CD33684F255066FB001200AC /* CleaningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33684E255066FB001200AC /* CleaningViewController.swift */; };
@@ -28,6 +29,7 @@
 		47F0BEE0E645E076B6FC7472 /* Pods-Broeg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broeg.debug.xcconfig"; path = "Target Support Files/Pods-Broeg/Pods-Broeg.debug.xcconfig"; sourceTree = "<group>"; };
 		62377830481FAEB772C07329 /* Pods-Broeg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broeg.release.xcconfig"; path = "Target Support Files/Pods-Broeg/Pods-Broeg.release.xcconfig"; sourceTree = "<group>"; };
 		76BEE0D02551DA8600360F12 /* BrewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewTableViewController.swift; sourceTree = "<group>"; };
+		76F4309B25583C2800712F66 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		CD33684B255066E9001200AC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CD33684E255066FB001200AC /* CleaningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningViewController.swift; sourceTree = "<group>"; };
 		CD33685125506732001200AC /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		76F4309A25583C0E00712F66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76F4309B25583C2800712F66 /* Coffee.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CD39E0FD254ABA8400381075 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		CD39E108254ABA8500381075 /* Broeg */ = {
 			isa = PBXGroup;
 			children = (
+				76F4309A25583C0E00712F66 /* Models */,
 				CD39E109254ABA8500381075 /* AppDelegate.swift */,
 				CD39E10B254ABA8500381075 /* SceneDelegate.swift */,
 				CD39E10D254ABA8500381075 /* HomeViewController.swift */,
@@ -236,6 +247,7 @@
 				CD39E121254AD4E900381075 /* RoundedButton.swift in Sources */,
 				CD33684F255066FB001200AC /* CleaningViewController.swift in Sources */,
 				CD3368562550675E001200AC /* SettingsTableViewController.swift in Sources */,
+				76F4309C25583C2800712F66 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

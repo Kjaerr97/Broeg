@@ -118,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="1084.0579710144928" y="208.92857142857142"/>
         </scene>
-        <!--Brew-->
+        <!--Bryg kaffe-->
         <scene sceneID="LMz-gz-hSR">
             <objects>
                 <tableViewController id="Ln4-RS-nYw" customClass="BrewTableViewController" customModule="Broeg" customModuleProvider="target" sceneMemberID="viewController">
@@ -141,7 +141,7 @@
                             <outlet property="delegate" destination="Ln4-RS-nYw" id="KnX-gK-44P"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Brew" id="auO-iP-xfP"/>
+                    <navigationItem key="navigationItem" title="Bryg kaffe" id="auO-iP-xfP"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjX-YJ-OeI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
