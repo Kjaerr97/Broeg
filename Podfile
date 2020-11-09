@@ -6,6 +6,11 @@ target 'Broeg' do
   use_frameworks!
 
 pod 'Firebase/Analytics'
+pod 'Firebase/Auth'
+pod 'Firebase/Core'
+pod 'Firebase/Firestore'
+pod 'FirebaseFirestoreSwift'
+pod 'Firebase/Database'
 
   # Pods for Broeg
 
