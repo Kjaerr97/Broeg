@@ -8,27 +8,42 @@
 import UIKit
 
 class BrewTableViewController: UITableViewController {
+    
+    var coffeeList = [Coffee]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        fillCoffeeList()
     }
-
+    
+    func fillCoffeeList() {
+        //TODO: this needs to be dynamic, instead of hardcoded
+        let sampleCoffeeList = [Coffee(name: "Cappucino", grams: 30, gramsPerCoffee: 3, waterTime: 20, waterTemp: 80, bloomWater: 7, bloomTime: 10), Coffee(name: "Cafe au lait", grams: 30, gramsPerCoffee: 3, waterTime: 20, waterTemp: 80, bloomWater: 7, bloomTime: 10), Coffee(name: "Americano", grams: 30, gramsPerCoffee: 3, waterTime: 20, waterTemp: 80, bloomWater: 7, bloomTime: 10), Coffee(name: "Latte", grams: 30, gramsPerCoffee: 3, waterTime: 20, waterTemp: 80, bloomWater: 7, bloomTime: 10)]
+        
+        coffeeList = sampleCoffeeList.compactMap{$0}
+        sortCoffeeList()
+        //TODO: Implement a method that sorts the favorites
+    }
+    
+    func sortCoffeeList() {
+        coffeeList.sort { (coffee1, coffee2) -> Bool in
+            if coffee1.name != coffee2.name {
+                return coffee1.name < coffee2.name
+            }
+            else {
+                return coffee1.grams < coffee2.grams
+            }
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return coffeeList.count
     }
 
     
@@ -36,6 +51,9 @@ class BrewTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "coffeeCell", for: indexPath)
 
         // Configure the cell...
+        
+        let coffee = coffeeList[indexPath.row]
+        cell.textLabel?.text = coffee.name
 
         return cell
     }
