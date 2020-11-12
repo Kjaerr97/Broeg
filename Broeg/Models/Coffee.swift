@@ -9,14 +9,14 @@ import Foundation
 
 class Coffee {
     var name: String
-    var grams: Int
-    var gramsPerCoffee: Int
-    var waterTime: Int
-    var waterTemp: Double
-    var bloomWater: Int
-    var bloomTime: Int
+    var grams: String
+    var waterPerGram: String
+    var waterTime: String
+    var waterTemp: String
+    var bloomWater: String
+    var bloomTime: String
     
-    init?(name: String, grams: Int, gramsPerCoffee: Int, waterTime: Int, waterTemp: Double, bloomWater: Int, bloomTime: Int) {
+    init?(name: String, grams: String, waterPerGram: String, waterTime: String, waterTemp: String, bloomWater: String, bloomTime: String) {
         
         guard !name.isEmpty else {
             return nil
@@ -24,7 +24,7 @@ class Coffee {
         
         self.name = name
         self.grams = grams
-        self.gramsPerCoffee = gramsPerCoffee
+        self.waterPerGram = waterPerGram
         self.waterTime = waterTime
         self.waterTemp = waterTemp
         self.bloomWater = bloomWater

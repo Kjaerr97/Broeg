@@ -158,7 +158,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dDk-kl-028">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dDk-kl-028">
                                 <rect key="frame" x="20" y="143" width="336.5" height="415"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor mange gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KY-Dh-eYy">
@@ -232,8 +232,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8zC-JR-xHH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dDk-kl-028" firstAttribute="leading" secondItem="8zC-JR-xHH" secondAttribute="leading" constant="20" id="Mve-vz-NSs"/>
+                            <constraint firstItem="dDk-kl-028" firstAttribute="top" secondItem="8zC-JR-xHH" secondAttribute="top" constant="55" id="h1B-Gj-Mkq"/>
+                            <constraint firstItem="8zC-JR-xHH" firstAttribute="trailing" secondItem="dDk-kl-028" secondAttribute="trailing" constant="57.5" id="hvX-O5-ZjR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="bryg/rediger din kaffe" id="nad-0C-wws"/>
+                    <connections>
+                        <outlet property="bloomWater" destination="WNa-Rf-JuK" id="NpZ-dw-jBR"/>
+                        <outlet property="bloomWaterDistr" destination="FdN-QG-LXo" id="RYq-Zj-OMn"/>
+                        <outlet property="coffeeAmount" destination="7Vk-8Y-vje" id="HbR-SQ-9q4"/>
+                        <outlet property="waterDistribution" destination="ZHG-pe-SqE" id="oop-wc-yJm"/>
+                        <outlet property="waterPerCoffee" destination="sxE-Ia-uEg" id="JZv-JT-OHC"/>
+                        <outlet property="waterTemp" destination="akO-Xr-PlA" id="A2I-kc-2YV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7r-oX-1eL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
