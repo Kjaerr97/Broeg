@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76518B88255D2DE200C2A383 /* AddCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76518B87255D2DE200C2A383 /* AddCoffeeViewController.swift */; };
 		76BEE0D12551DA8600360F12 /* BrewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEE0D02551DA8600360F12 /* BrewTableViewController.swift */; };
 		76F4309C25583C2800712F66 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4309B25583C2800712F66 /* Coffee.swift */; };
 		76F430A025597FAD00712F66 /* BrewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4309F25597FAD00712F66 /* BrewDetailViewController.swift */; };
@@ -29,6 +30,7 @@
 		0D235F1795AD9BC533D9842E /* Pods_Broeg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Broeg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F0BEE0E645E076B6FC7472 /* Pods-Broeg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broeg.debug.xcconfig"; path = "Target Support Files/Pods-Broeg/Pods-Broeg.debug.xcconfig"; sourceTree = "<group>"; };
 		62377830481FAEB772C07329 /* Pods-Broeg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broeg.release.xcconfig"; path = "Target Support Files/Pods-Broeg/Pods-Broeg.release.xcconfig"; sourceTree = "<group>"; };
+		76518B87255D2DE200C2A383 /* AddCoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeViewController.swift; sourceTree = "<group>"; };
 		76BEE0D02551DA8600360F12 /* BrewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewTableViewController.swift; sourceTree = "<group>"; };
 		76F4309B25583C2800712F66 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		76F4309F25597FAD00712F66 /* BrewDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewDetailViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				CD3368552550675E001200AC /* SettingsTableViewController.swift */,
 				76BEE0D02551DA8600360F12 /* BrewTableViewController.swift */,
 				76F4309F25597FAD00712F66 /* BrewDetailViewController.swift */,
+				76518B87255D2DE200C2A383 /* AddCoffeeViewController.swift */,
 			);
 			path = Broeg;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76518B88255D2DE200C2A383 /* AddCoffeeViewController.swift in Sources */,
 				CD39E10E254ABA8500381075 /* HomeViewController.swift in Sources */,
 				76F430A025597FAD00712F66 /* BrewDetailViewController.swift in Sources */,
 				76BEE0D12551DA8600360F12 /* BrewTableViewController.swift in Sources */,

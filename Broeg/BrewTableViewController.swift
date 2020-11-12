@@ -17,9 +17,10 @@ class BrewTableViewController: UITableViewController {
     }
     
     func fillCoffeeList() {
+        // DUMMY DATA
         //TODO: this needs to be dynamic, instead of hardcoded
         let sampleCoffeeList = [Coffee(name: "Cappucino", grams: "30", waterPerGram: "3", waterTime: "20", waterTemp: "80", bloomWater: "7", bloomTime: "10"), Coffee(name: "Cafe au lait", grams: "30", waterPerGram: "3", waterTime: "20", waterTemp: "80", bloomWater: "7", bloomTime: "10"), Coffee(name: "Americano", grams: "30", waterPerGram: "3", waterTime: "20", waterTemp: "80", bloomWater: "7", bloomTime: "10"), Coffee(name: "Latte", grams: "30", waterPerGram: "3", waterTime: "20", waterTemp: "80", bloomWater: "7", bloomTime: "10")]
-        
+
         coffeeList = sampleCoffeeList.compactMap{$0}
         sortCoffeeList()
         //TODO: Implement a method that sorts the favorites
@@ -72,9 +73,16 @@ class BrewTableViewController: UITableViewController {
                 brewDetailViewController.coffee = coffee
             }
         }
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
     
+    @IBAction func unwindToTableViewController(segue: UIStoryboardSegue) {
+        let addCoffeeViewController = segue.source as! AddCoffeeViewController
+        
+        if let cofee = addCoffeeViewController.coffee {
+            coffeeList.append(cofee)
+            sortCoffeeList()
+            self.tableView.reloadData()
+        }
+    }
 
 }
