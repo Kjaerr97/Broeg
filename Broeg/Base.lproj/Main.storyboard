@@ -92,27 +92,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="person" catalog="system"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJl-wI-Y6a">
-                                <rect key="frame" x="361" y="92" width="21" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="gearshape" catalog="system"/>
-                                <connections>
-                                    <segue destination="Mag-10-lgy" kind="show" id="vUV-La-1Ag"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxq-Rx-Fx4">
-                                <rect key="frame" x="34" y="92" width="19" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="person" catalog="system"/>
-                                <connections>
-                                    <segue destination="MO0-UU-RWg" kind="show" id="PJs-CQ-qhW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="7dn-ya-7pC"/>
+                    <navigationItem key="navigationItem" title="Home" id="7dn-ya-7pC">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="person" catalog="system" id="DNZ-go-NaI">
+                            <connections>
+                                <segue destination="MO0-UU-RWg" kind="show" id="9V2-Sh-sOA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="gearshape" catalog="system" id="x6v-bQ-caI">
+                            <connections>
+                                <segue destination="Mag-10-lgy" kind="show" id="xqq-0O-lyA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
