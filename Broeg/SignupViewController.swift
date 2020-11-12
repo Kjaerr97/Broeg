@@ -52,10 +52,14 @@ class SignupViewController: UIViewController {
             }
         }
         
+        /**
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "home")
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
+        */
+        
+        performSegue(withIdentifier: "signUpPressed", sender: self)
         
     }
     
