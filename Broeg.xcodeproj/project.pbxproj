@@ -19,9 +19,12 @@
 		CD39E111254ABA8500381075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD39E10F254ABA8500381075 /* Main.storyboard */; };
 		CD39E113254ABA8500381075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD39E112254ABA8500381075 /* Assets.xcassets */; };
 		CD39E121254AD4E900381075 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39E120254AD4E900381075 /* RoundedButton.swift */; };
+		CD416A2F255D32AC007172DC /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD416A2E255D32AC007172DC /* signUpViewController.swift */; };
+		CD416A3A255D32ED007172DC /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD416A39255D32ED007172DC /* loginViewController.swift */; };
+		CD416A48255D3E01007172DC /* FormUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD416A47255D3E01007172DC /* FormUtilities.swift */; };
+		CD5547642563371800733561 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5547632563371800733561 /* Constants.swift */; };
 		CD840CAE255826CB00ECA5EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD840CAD255826CB00ECA5EB /* GoogleService-Info.plist */; };
-		CD98D5FA2559B601007D12A3 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98D5F92559B601007D12A3 /* SignupViewController.swift */; };
-		CDCE59CE255858DC00DF6717 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE59CD255858DC00DF6717 /* LoginViewController.swift */; };
+		CDD72F7A255D4467004F4C23 /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD72F79255D4467004F4C23 /* welcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +44,12 @@
 		CD39E112254ABA8500381075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD39E117254ABA8500381075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD39E120254AD4E900381075 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		CD416A2E255D32AC007172DC /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		CD416A39255D32ED007172DC /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		CD416A47255D3E01007172DC /* FormUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormUtilities.swift; sourceTree = "<group>"; };
+		CD5547632563371800733561 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CD840CAD255826CB00ECA5EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CD98D5F92559B601007D12A3 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		CDCE59CD255858DC00DF6717 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CDD72F79255D4467004F4C23 /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,23 +94,42 @@
 		CD39E108254ABA8500381075 /* Broeg */ = {
 			isa = PBXGroup;
 			children = (
+				CD416A3D255D3B76007172DC /* Shared */,
+				CD416A23255D29AA007172DC /* View Controllers */,
 				CD39E109254ABA8500381075 /* AppDelegate.swift */,
 				CD39E10B254ABA8500381075 /* SceneDelegate.swift */,
-				CD39E10D254ABA8500381075 /* HomeViewController.swift */,
 				CD39E10F254ABA8500381075 /* Main.storyboard */,
 				CD39E112254ABA8500381075 /* Assets.xcassets */,
 				CD39E117254ABA8500381075 /* Info.plist */,
 				CD840CAD255826CB00ECA5EB /* GoogleService-Info.plist */,
-				CD39E120254AD4E900381075 /* RoundedButton.swift */,
+			);
+			path = Broeg;
+			sourceTree = "<group>";
+		};
+		CD416A23255D29AA007172DC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD39E10D254ABA8500381075 /* HomeViewController.swift */,
 				CD33684B255066E9001200AC /* ProfileViewController.swift */,
 				CD33684E255066FB001200AC /* CleaningViewController.swift */,
 				CD33685125506732001200AC /* HistoryTableViewController.swift */,
 				CD3368552550675E001200AC /* SettingsTableViewController.swift */,
 				76BEE0D02551DA8600360F12 /* BrewTableViewController.swift */,
-				CDCE59CD255858DC00DF6717 /* LoginViewController.swift */,
-				CD98D5F92559B601007D12A3 /* SignupViewController.swift */,
+				CD416A2E255D32AC007172DC /* signUpViewController.swift */,
+				CD416A39255D32ED007172DC /* loginViewController.swift */,
+				CDD72F79255D4467004F4C23 /* welcomeViewController.swift */,
 			);
-			path = Broeg;
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CD416A3D255D3B76007172DC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CD39E120254AD4E900381075 /* RoundedButton.swift */,
+				CD416A47255D3E01007172DC /* FormUtilities.swift */,
+				CD5547632563371800733561 /* Constants.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		F438385B27516D73B2A9D72D /* Frameworks */ = {
@@ -231,15 +256,18 @@
 			files = (
 				CD39E10E254ABA8500381075 /* HomeViewController.swift in Sources */,
 				76BEE0D12551DA8600360F12 /* BrewTableViewController.swift in Sources */,
-				CD98D5FA2559B601007D12A3 /* SignupViewController.swift in Sources */,
 				CD39E10A254ABA8500381075 /* AppDelegate.swift in Sources */,
+				CD416A2F255D32AC007172DC /* signUpViewController.swift in Sources */,
 				CD39E10C254ABA8500381075 /* SceneDelegate.swift in Sources */,
 				CD33684C255066E9001200AC /* ProfileViewController.swift in Sources */,
 				CD33685225506732001200AC /* HistoryTableViewController.swift in Sources */,
+				CD416A3A255D32ED007172DC /* loginViewController.swift in Sources */,
 				CD39E121254AD4E900381075 /* RoundedButton.swift in Sources */,
+				CD416A48255D3E01007172DC /* FormUtilities.swift in Sources */,
 				CD33684F255066FB001200AC /* CleaningViewController.swift in Sources */,
-				CDCE59CE255858DC00DF6717 /* LoginViewController.swift in Sources */,
+				CD5547642563371800733561 /* Constants.swift in Sources */,
 				CD3368562550675E001200AC /* SettingsTableViewController.swift in Sources */,
+				CDD72F7A255D4467004F4C23 /* welcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
