@@ -285,7 +285,6 @@
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="loginTapped:" destination="Iyh-FZ-JCF" eventType="touchUpInside" id="MhV-fp-aRw"/>
-                                            <segue destination="ACY-7A-ZZi" kind="presentation" modalPresentationStyle="fullScreen" id="ilM-GG-oyL"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNo-eB-TbP">
@@ -382,7 +381,7 @@
         <!--Navigation Controller-->
         <scene sceneID="UI0-fC-v0l">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ACY-7A-ZZi" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigation" automaticallyAdjustsScrollViewInsets="NO" id="ACY-7A-ZZi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="5BR-h4-adv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YzL-tQ-WFs">

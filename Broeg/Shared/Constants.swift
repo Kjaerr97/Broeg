@@ -15,6 +15,7 @@ struct Constants {
         
         // static = er can access this without having to create instances of the structure
         static let homeViewController = "home"
+        static let UINavigationController = "navigation"
         
     }
 }

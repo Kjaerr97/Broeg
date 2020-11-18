@@ -55,9 +55,33 @@ class loginViewController: UIViewController {
     
     @IBAction func loginTapped(_ sender: Any) {
         
+        /*
+        let email = emailTextField.text!
+        let password = passwordTextField.text!
+        
+        if password.isEmpty || email.isEmpty {
+            
+        }
+ */
+        
+        let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         
+        Auth.auth().signIn(withEmail: email, password: password) { (result, err) in
+            
+            if err != nil {
+                // couldn't sign in
+                self.errorLabel.text = err!.localizedDescription
+                self.errorLabel.alpha = 1
+            }
+            
+            else {
+                let navigationController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.UINavigationController) as? UINavigationController
+                
+                self.view.window?.rootViewController = navigationController
+                self.view.window?.makeKeyAndVisible()
+            }
+        }
     }
-
-    
 }
