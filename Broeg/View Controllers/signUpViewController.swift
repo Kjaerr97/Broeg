@@ -23,6 +23,12 @@ class signUpViewController: UIViewController {
         
         // hide error label from screen
         errorLabel.alpha = 0
+        
+        Utilities.styleTextField(textfield: firstNameTextField)
+        Utilities.styleTextField(textfield: lastNameTextField)
+        Utilities.styleTextField(textfield: emailTextField)
+        Utilities.styleTextField(textfield: passwordTextField)
+        Utilities.styleFilledButton(button: signUpButton)
     }
     
     
@@ -44,7 +50,6 @@ class signUpViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
-    
     // "-> String?" = returning an optinal string
     // check fields and validate that the data is correct
     // this method returns nil if it's correct, otherwise an error message as a string
@@ -63,7 +68,7 @@ class signUpViewController: UIViewController {
         
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        if FormUtilities.isPasswordValid(password: cleanedPassword) == false {
+        if Utilities.isPasswordValid(password: cleanedPassword) == false {
             
             // password isn't secure enough
             

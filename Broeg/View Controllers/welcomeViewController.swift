@@ -11,15 +11,22 @@ class welcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUpElements()
 
         // Do any additional setup after loading the view.
     }
     
     @IBOutlet weak var signUpButton: UIButton!
     
-    
-    
     @IBOutlet weak var loginButton: UIButton!
+    
+    func setUpElements () {
+        
+        Utilities.styleFilledButton(button: signUpButton)
+        Utilities.styleFilledButton(button: loginButton)
+        
+    }
     
     /*
     // MARK: - Navigation

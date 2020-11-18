@@ -24,8 +24,9 @@ class loginViewController: UIViewController {
         // hide error label
         errorLabel.alpha = 0
         
-        
-        
+        Utilities.styleTextField(textfield: emailTextField)
+        Utilities.styleTextField(textfield: passwordTextField)
+        Utilities.styleFilledButton(button: loginButton)
     }
     
     @IBOutlet weak var emailTextField: UITextField!
