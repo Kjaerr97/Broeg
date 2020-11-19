@@ -15,8 +15,9 @@ class Coffee {
     var waterTemp: String
     var bloomWater: String
     var bloomTime: String
+    var isFavorite: Bool
     
-    init?(name: String, grams: String, waterPerGram: String, waterTime: String, waterTemp: String, bloomWater: String, bloomTime: String) {
+    init?(name: String, grams: String, waterPerGram: String, waterTime: String, waterTemp: String, bloomWater: String, bloomTime: String, isFavorite: Bool) {
         
         guard !name.isEmpty else {
             return nil
@@ -29,6 +30,7 @@ class Coffee {
         self.waterTemp = waterTemp
         self.bloomWater = bloomWater
         self.bloomTime = bloomTime
+        self.isFavorite = isFavorite
     }
     
 }

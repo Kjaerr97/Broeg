@@ -45,7 +45,7 @@ class AddCoffeeViewController: UIViewController {
         if sender as? UIBarButtonItem == doneButton {
             if let name = coffeeNameTF.text, let gramsCoffee = gramsCoffeeTF.text, let waterPerGram = waterPerGramTF.text, let waterTime = waterTimeTF.text, let waterTemp = waterTempTF.text, let bloomWater = bloomWaterTF.text, let bloomTime = bloomTimeTF.text {
                 if !name.isEmpty && !gramsCoffee.isEmpty && !waterPerGram.isEmpty && !waterTime.isEmpty && !waterTemp.isEmpty && !bloomWater.isEmpty && !bloomTime.isEmpty {
-                    coffee = Coffee(name: name, grams: gramsCoffee, waterPerGram: waterPerGram, waterTime: waterTime, waterTemp: waterTemp, bloomWater: bloomWater, bloomTime: bloomTime)
+                    coffee = Coffee(name: name, grams: gramsCoffee, waterPerGram: waterPerGram, waterTime: waterTime, waterTemp: waterTemp, bloomWater: bloomWater, bloomTime: bloomTime, isFavorite: false)
                 }
             }
         }
