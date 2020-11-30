@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		767EB29225754B4F0095BFA1 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB29125754B4F0095BFA1 /* Coffee.swift */; };
+		767EB2B825754DC90095BFA1 /* AddCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB2B725754DC90095BFA1 /* AddCoffeeViewController.swift */; };
+		767EB2BB25754DD00095BFA1 /* BrewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EB2BA25754DD00095BFA1 /* BrewDetailViewController.swift */; };
 		76BEE0D12551DA8600360F12 /* BrewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEE0D02551DA8600360F12 /* BrewTableViewController.swift */; };
 		8251572B1B412374D7B0F43E /* Pods_Broeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D235F1795AD9BC533D9842E /* Pods_Broeg.framework */; };
 		CD33684C255066E9001200AC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33684B255066E9001200AC /* ProfileViewController.swift */; };
@@ -33,6 +35,8 @@
 		47F0BEE0E645E076B6FC7472 /* Pods-Broeg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broeg.debug.xcconfig"; path = "Target Support Files/Pods-Broeg/Pods-Broeg.debug.xcconfig"; sourceTree = "<group>"; };
 		62377830481FAEB772C07329 /* Pods-Broeg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broeg.release.xcconfig"; path = "Target Support Files/Pods-Broeg/Pods-Broeg.release.xcconfig"; sourceTree = "<group>"; };
 		767EB29125754B4F0095BFA1 /* Coffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		767EB2B725754DC90095BFA1 /* AddCoffeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCoffeeViewController.swift; sourceTree = "<group>"; };
+		767EB2BA25754DD00095BFA1 /* BrewDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewDetailViewController.swift; sourceTree = "<group>"; };
 		76BEE0D02551DA8600360F12 /* BrewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewTableViewController.swift; sourceTree = "<group>"; };
 		CD33684B255066E9001200AC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CD33684E255066FB001200AC /* CleaningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		CD416A23255D29AA007172DC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				767EB2BA25754DD00095BFA1 /* BrewDetailViewController.swift */,
+				767EB2B725754DC90095BFA1 /* AddCoffeeViewController.swift */,
 				CD39E10D254ABA8500381075 /* HomeViewController.swift */,
 				CD33684B255066E9001200AC /* ProfileViewController.swift */,
 				CD33684E255066FB001200AC /* CleaningViewController.swift */,
@@ -273,11 +279,13 @@
 				CD39E10C254ABA8500381075 /* SceneDelegate.swift in Sources */,
 				CD33684C255066E9001200AC /* ProfileViewController.swift in Sources */,
 				CD33685225506732001200AC /* HistoryTableViewController.swift in Sources */,
+				767EB2B825754DC90095BFA1 /* AddCoffeeViewController.swift in Sources */,
 				CD416A3A255D32ED007172DC /* loginViewController.swift in Sources */,
 				CD39E121254AD4E900381075 /* RoundedButton.swift in Sources */,
 				CD33684F255066FB001200AC /* CleaningViewController.swift in Sources */,
 				CD5547642563371800733561 /* Constants.swift in Sources */,
 				CD3368562550675E001200AC /* SettingsTableViewController.swift in Sources */,
+				767EB2BB25754DD00095BFA1 /* BrewDetailViewController.swift in Sources */,
 				CDD72F7A255D4467004F4C23 /* welcomeViewController.swift in Sources */,
 				767EB29225754B4F0095BFA1 /* Coffee.swift in Sources */,
 			);
