@@ -73,6 +73,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		76F4180B257546DF00B33529 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CD39E0FD254ABA8400381075 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +101,7 @@
 		CD39E108254ABA8500381075 /* Broeg */ = {
 			isa = PBXGroup;
 			children = (
+				76F4180B257546DF00B33529 /* Models */,
 				CD416A3D255D3B76007172DC /* Shared */,
 				CD416A23255D29AA007172DC /* View Controllers */,
 				CD39E109254ABA8500381075 /* AppDelegate.swift */,
