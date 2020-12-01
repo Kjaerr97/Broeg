@@ -107,7 +107,7 @@ class signUpViewController: UIViewController {
                 else {
                     // user was creating succesfully, now store the first name and last name
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid": result!.user.uid]) { (error) in
+                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "email":emailText, "uid": result!.user.uid]) { (error) in
                         
                         if error != nil {
                             // show error message
@@ -132,9 +132,9 @@ class signUpViewController: UIViewController {
     // youtube link: https://www.youtube.com/watch?v=1HN7usMROt8&t=1894s&ab_channel=CodeWithChris
     // from 1:10:05
     func transitionToHome() {
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        let navigationViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.UINavigationController) as? UINavigationController
         
-        view.window?.rootViewController = homeViewController
+        view.window?.rootViewController = navigationViewController
         view.window?.makeKeyAndVisible()
     }
 }

@@ -26,6 +26,7 @@
 		CD416A3A255D32ED007172DC /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD416A39255D32ED007172DC /* loginViewController.swift */; };
 		CD5547642563371800733561 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5547632563371800733561 /* Constants.swift */; };
 		CD840CAE255826CB00ECA5EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD840CAD255826CB00ECA5EB /* GoogleService-Info.plist */; };
+		CD93CED32575A4CF00D56932 /* currentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD93CED22575A4CF00D56932 /* currentUser.swift */; };
 		CDA9DA70256593AB0056EE02 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA9DA6F256593AB0056EE02 /* Utilities.swift */; };
 		CDD72F7A255D4467004F4C23 /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD72F79255D4467004F4C23 /* welcomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		CD416A39255D32ED007172DC /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		CD5547632563371800733561 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CD840CAD255826CB00ECA5EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD93CED22575A4CF00D56932 /* currentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentUser.swift; sourceTree = "<group>"; };
 		CDA9DA6F256593AB0056EE02 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CDD72F79255D4467004F4C23 /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 				CD39E112254ABA8500381075 /* Assets.xcassets */,
 				CD39E117254ABA8500381075 /* Info.plist */,
 				CD840CAD255826CB00ECA5EB /* GoogleService-Info.plist */,
+				CD93CED22575A4CF00D56932 /* currentUser.swift */,
 			);
 			path = Broeg;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				CD3368562550675E001200AC /* SettingsTableViewController.swift in Sources */,
 				767EB2BB25754DD00095BFA1 /* BrewDetailViewController.swift in Sources */,
 				CDD72F7A255D4467004F4C23 /* welcomeViewController.swift in Sources */,
+				CD93CED32575A4CF00D56932 /* currentUser.swift in Sources */,
 				767EB29225754B4F0095BFA1 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
