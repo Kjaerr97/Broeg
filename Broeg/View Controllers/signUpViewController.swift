@@ -132,9 +132,9 @@ class signUpViewController: UIViewController {
     // youtube link: https://www.youtube.com/watch?v=1HN7usMROt8&t=1894s&ab_channel=CodeWithChris
     // from 1:10:05
     func transitionToHome() {
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        let navigationController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.UINavigationController) as? UINavigationController
         
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
+        self.view.window?.rootViewController = navigationController
+        self.view.window?.makeKeyAndVisible()
     }
 }
