@@ -8,20 +8,30 @@
 import Foundation
 
 class Coffee {
-    var name: String
-    var grams: String
-    var waterPerGram: String
-    var waterTime: String
-    var waterTemp: String
-    var bloomWater: String
-    var bloomTime: String
+    let name: String
+    let grams: String
+    let waterPerGram: String
+    let waterTime: String
+    let waterTemp: String
+    let bloomWater: String
+    let bloomTime: String
     var isFavorite: Bool
     
-    init?(name: String, grams: String, waterPerGram: String, waterTime: String, waterTemp: String, bloomWater: String, bloomTime: String, isFavorite: Bool) {
-        
-        guard !name.isEmpty else {
-            return nil
-        }
+    var dictionary: [String: Any] {
+        return [
+            "name": name,
+            "grams": grams,
+            "waterPerGram": waterPerGram,
+            "waterTime": waterTime,
+            "waterTemp": waterTemp,
+            "bloomWater": bloomWater,
+            "bloomTime": bloomTime,
+            "isFavorite": isFavorite
+            
+        ]
+    }
+    
+    init(name: String, grams: String, waterPerGram: String, waterTime: String, waterTemp: String, bloomWater: String, bloomTime: String, isFavorite: Bool) {
         
         self.name = name
         self.grams = grams
@@ -31,6 +41,20 @@ class Coffee {
         self.bloomWater = bloomWater
         self.bloomTime = bloomTime
         self.isFavorite = isFavorite
+    }
+    
+    convenience init?(dictionary: [String: Any]) {
+        guard let name = dictionary["name"] as? String,
+              let grams = dictionary["grams"] as? String,
+              let waterPerGram = dictionary["waterPerGram"] as? String,
+              let waterTime = dictionary["waterTime"] as? String,
+              let waterTemp = dictionary["waterTemp"] as? String,
+              let bloomWater = dictionary["bloomWater"] as? String,
+              let bloomTime = dictionary["bloomTime"] as? String,
+              let isFavorite = dictionary["isFavorite"] as? Bool
+              else {return nil}
+        
+        self.init(name: name, grams: grams, waterPerGram: waterPerGram, waterTime: waterTime, waterTemp: waterTemp, bloomWater: bloomWater, bloomTime: bloomTime, isFavorite: isFavorite)
     }
     
 }
