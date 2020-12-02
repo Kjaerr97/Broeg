@@ -13,9 +13,11 @@ struct Constants {
     
     struct Storyboard {
         
-        // static = er can access this without having to create instances of the structure
+        // static = we can access this without having to create instances of the structure
         static let homeViewController = "home"
         static let UINavigationController = "navigation"
+        static let welcomeViewController = "welcome"
+        static let profileViewController = "profile"
         
     }
 }
