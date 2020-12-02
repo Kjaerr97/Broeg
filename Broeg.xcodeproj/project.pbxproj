@@ -86,6 +86,7 @@
 		76F418312575496A00B33529 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CD93CED22575A4CF00D56932 /* currentUser.swift */,
 				767EB29125754B4F0095BFA1 /* Coffee.swift */,
 			);
 			path = Models;
@@ -121,7 +122,6 @@
 				CD39E112254ABA8500381075 /* Assets.xcassets */,
 				CD39E117254ABA8500381075 /* Info.plist */,
 				CD840CAD255826CB00ECA5EB /* GoogleService-Info.plist */,
-				CD93CED22575A4CF00D56932 /* currentUser.swift */,
 			);
 			path = Broeg;
 			sourceTree = "<group>";
