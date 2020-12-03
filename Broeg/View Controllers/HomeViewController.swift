@@ -11,22 +11,28 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpElements()
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func Brew(_ sender: RoundButton) {
+    
+    @IBOutlet weak var broegBtnOutlet: UIButton!
+    
+    
+    @IBOutlet weak var historikBtnOutlet: UIButton!
+    
+    
+    @IBOutlet weak var rensBtnOutlet: UIButton!
+    
+    func setUpElements() {
+        
+        Utilities.styleFilledHomeButton(button: broegBtnOutlet)
+        Utilities.styleFilledHomeButton(button: historikBtnOutlet)
+        Utilities.styleFilledHomeButton(button: rensBtnOutlet)
+        
     }
     
-    @IBAction func btnRens(_ sender: RoundButton) {
+    @IBAction func unwindToHomeViewController(segue: UIStoryboardSegue) {
     }
     
-    
-    
-    @IBAction func btnHistorik(_ sender: RoundButton) {
-    }
-    
-    
-    
-
 }
-
