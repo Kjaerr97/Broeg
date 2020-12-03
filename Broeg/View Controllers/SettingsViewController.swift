@@ -13,21 +13,21 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpElements()
     }
     
     
-    @IBAction func singOutBtnTapped(_ sender: UIButton) {
-        
+    @IBOutlet weak var signOutOutlet: UIButton!
+    @IBOutlet weak var deleteAccOutlet: UIButton!
+    @IBAction func signOutBtn(_ sender: UIButton) {
         signOut()
-        
     }
     
-    
-    @IBAction func deleteBtnTapped(_ sender: UIButton) {
+    @IBAction func deleteAccBtn(_ sender: UIButton) {
+        deleteAcc()
     }
     
     func signOut() {
-        
         do {
             try Auth.auth().signOut()
             
@@ -38,7 +38,31 @@ class SettingsViewController: UIViewController {
         } catch let err {
                 print(err)
             }
-            
+        }
+    
+    func deleteAcc() {
+        let user = Auth.auth().currentUser?.uid
+        let db = Firestore.firestore()
+        db.collection("users").document(user ?? "").updateData([
+            "firstname": FieldValue.delete(), "lastname": FieldValue.delete(), "email": FieldValue.delete(), "uid": FieldValue.delete()]) { err in
+            if let err = err {
+                print("Error updating document: \(err)")
+            } else {
+                print("Document successfully updated")
+            }
         }
         
+        db.collection("users").document(user ?? "").delete() { err in
+            if let err = err {
+                print("Error removing document: \(err)")
+            } else {
+                print("Document successfully removed!")
+            }
+        }
+    }
+    
+    func setUpElements() {
+        Utilities.styleFilledSignOutButton(button: signOutOutlet)
+        Utilities.styleFilledDeleteButton(button: deleteAccOutlet)
+    }
     }
