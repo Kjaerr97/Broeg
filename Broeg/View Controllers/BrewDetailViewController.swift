@@ -57,6 +57,11 @@ class BrewDetailViewController: UIViewController {
         }
     
     }
+    
+    @IBAction func unwindToBrewDetailViewController(segue: UIStoryboardSegue) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
