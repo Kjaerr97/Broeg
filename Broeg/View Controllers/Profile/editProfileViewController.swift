@@ -9,7 +9,6 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-/*
 protocol firstNameDelegate {
     func firstNameData(Data: String)
 }
@@ -21,15 +20,12 @@ protocol lastNameDelegate {
 protocol emailDelegate {
     func emailData(Data: String)
 }
- */
 
 class editProfileViewController: UIViewController {
     
-    /*
     var firstNameDelegate: firstNameDelegate? = nil
     var lastNameDelegate: lastNameDelegate? = nil
     var emailDelegate: emailDelegate? = nil
- */
     
     
 
@@ -46,12 +42,13 @@ class editProfileViewController: UIViewController {
     @IBOutlet weak var lastNameTxt: UITextField!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var emailTxt: UITextField!
-    
-    @IBOutlet weak var saveChanges: UIBarButtonItem!
-    
+    @IBOutlet weak var saveBtn: UIButton!
+    @IBAction func saveBtnTapped(_ sender: UIButton) {
+        updateProfile()
+        
+    }
     
     func updateProfile () {
-        /*
         if firstNameDelegate != nil {
             if firstNameTxt.text != nil {
                 let data = firstNameTxt.text
@@ -72,21 +69,10 @@ class editProfileViewController: UIViewController {
                 emailDelegate?.emailData(Data: data!)
             }
         }
- */
         
         // update firestore with text
         let user = Auth.auth().currentUser?.uid
         let db = Firestore.firestore()
         db.collection("users").document(user ?? "").setData(["firstname":firstNameTxt.text!, "lastname":lastNameTxt.text!,"email":emailTxt.text!, "uid":user!])
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if sender as? UIBarButtonItem == saveChanges {
-            print("test")
-            updateProfile()
-            
-        }
-    }
-    
 }

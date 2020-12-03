@@ -36,33 +36,6 @@ class Utilities {
         
     }
     
-    static func styleFilledDeleteButton(  button: UIButton) {
-        
-        // filled rounded corner style
-        button.backgroundColor = UIColor.red
-        button.layer.cornerRadius = 25.0
-        button.tintColor = UIColor.white
-        
-    }
-    
-    static func styleFilledHomeButton(  button: UIButton) {
-        
-        // filled rounded corner style
-        button.backgroundColor = UIColor.brown
-        button.layer.cornerRadius = 25.0
-        button.tintColor = UIColor.white
-        
-    }
-    
-    static func styleFilledSignOutButton(  button: UIButton) {
-        
-        // filled rounded corner style
-        button.layer.cornerRadius = 25.0
-        button.tintColor = UIColor.white
-        button.backgroundColor = UIColor.orange
-        
-    }
-    
     
     static func stylHollowButton(  button: UIButton) {
         

@@ -21,6 +21,7 @@
 		CD39E10E254ABA8500381075 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39E10D254ABA8500381075 /* HomeViewController.swift */; };
 		CD39E111254ABA8500381075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD39E10F254ABA8500381075 /* Main.storyboard */; };
 		CD39E113254ABA8500381075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD39E112254ABA8500381075 /* Assets.xcassets */; };
+		CD39E121254AD4E900381075 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39E120254AD4E900381075 /* RoundedButton.swift */; };
 		CD416A2F255D32AC007172DC /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD416A2E255D32AC007172DC /* signUpViewController.swift */; };
 		CD416A3A255D32ED007172DC /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD416A39255D32ED007172DC /* loginViewController.swift */; };
 		CD5547642563371800733561 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5547632563371800733561 /* Constants.swift */; };
@@ -51,6 +52,7 @@
 		CD39E110254ABA8500381075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD39E112254ABA8500381075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD39E117254ABA8500381075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD39E120254AD4E900381075 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		CD416A2E255D32AC007172DC /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		CD416A39255D32ED007172DC /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		CD5547632563371800733561 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		CD416A3D255D3B76007172DC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CD39E120254AD4E900381075 /* RoundedButton.swift */,
 				CD5547632563371800733561 /* Constants.swift */,
 				CDA9DA6F256593AB0056EE02 /* Utilities.swift */,
 			);
@@ -303,6 +306,7 @@
 				CD33685225506732001200AC /* HistoryTableViewController.swift in Sources */,
 				767EB2B825754DC90095BFA1 /* AddCoffeeViewController.swift in Sources */,
 				CD416A3A255D32ED007172DC /* loginViewController.swift in Sources */,
+				CD39E121254AD4E900381075 /* RoundedButton.swift in Sources */,
 				CD33684F255066FB001200AC /* CleaningViewController.swift in Sources */,
 				767EB2D32578E9E10095BFA1 /* BrewTimerViewController.swift in Sources */,
 				CD5547642563371800733561 /* Constants.swift in Sources */,

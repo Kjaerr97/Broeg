@@ -9,15 +9,9 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class ProfileViewController: UIViewController
-
-/**
- , firstNameDelegate, lastNameDelegate, emailDelegate
- */
-
-{
+class ProfileViewController: UIViewController, firstNameDelegate, lastNameDelegate, emailDelegate {
     
-    /*
+    
     func firstNameData(Data: String) {
         firstName.text = Data
     }
@@ -29,9 +23,7 @@ class ProfileViewController: UIViewController
     func emailData(Data: String) {
         yourEmail.text = Data
     }
- */
     
-    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showEditVC" {
             let editProfileViewController: editProfileViewController = segue.destination as! editProfileViewController
@@ -40,8 +32,6 @@ class ProfileViewController: UIViewController
             editProfileViewController.emailDelegate = self
         }
     }
- */
- 
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,11 +71,4 @@ class ProfileViewController: UIViewController
             }
         }
     }
-    
-    @IBAction func unwindToProfileViewController(segue: UIStoryboardSegue) {
-        
-        getUser()
-        
-    }
-    
 }
