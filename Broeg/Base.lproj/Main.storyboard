@@ -80,7 +80,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEN-P4-Fr5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="oXd-59-83g" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4757.9439252336442" y="-285.7451403887689"/>
+            <point key="canvasLocation" x="1433" y="1092"/>
         </scene>
         <!--Edit profile info-->
         <scene sceneID="nw5-mb-P6o">
@@ -180,7 +180,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tft-Z7-BNO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="C1n-gq-RVc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-838.31775700934577" y="-523.54211663066963"/>
+            <point key="canvasLocation" x="1433" y="-400"/>
         </scene>
         <!--ProfileViewController-->
         <scene sceneID="X1g-U3-zEn">
@@ -285,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lr8-G3-Ayn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="266.35514018691589" y="-532.61339092872572"/>
+            <point key="canvasLocation" x="3198" y="-400"/>
         </scene>
         <!--Sign up-->
         <scene sceneID="BxS-k0-zTZ">
@@ -370,7 +370,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYd-aR-4cP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="aKh-Er-LPv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-30.841121495327101" y="-1309.5032397408208"/>
+            <point key="canvasLocation" x="1433" y="-1135"/>
         </scene>
         <!--Log in-->
         <scene sceneID="HI2-C0-sPF">
@@ -441,36 +441,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLj-Gf-Bow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="XG9-Kd-pKz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3775.233644859813" y="-1303.0237580993521"/>
-        </scene>
-        <!--History-->
-        <scene sceneID="Hgc-UP-vQW">
-            <objects>
-                <tableViewController id="5Ud-Gf-3hc" customClass="HistoryTableViewController" customModule="Broeg" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BWM-bs-OcP">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QFw-lb-7cL">
-                                <rect key="frame" x="0.0" y="28" width="428" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QFw-lb-7cL" id="g84-XC-mOL">
-                                    <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="5Ud-Gf-3hc" id="SQc-VR-vdL"/>
-                            <outlet property="delegate" destination="5Ud-Gf-3hc" id="ah3-lz-r7d"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="History" id="ncD-yO-PeE"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hBv-CG-vHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="987" y="1183"/>
+            <point key="canvasLocation" x="5120" y="-1135"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="W9K-my-cCZ">
@@ -505,12 +476,19 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="GLB-Ed-NZz">
+                                <rect key="frame" x="90" y="104" width="248" height="488"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h9G-ep-bcK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="h9G-ep-bcK" firstAttribute="trailing" secondItem="GLB-Ed-NZz" secondAttribute="trailing" constant="90" id="7cT-RJ-fh1"/>
                             <constraint firstItem="Upk-P5-Ydc" firstAttribute="leading" secondItem="h9G-ep-bcK" secondAttribute="leading" constant="40" id="LM7-Am-Ucu"/>
+                            <constraint firstItem="Upk-P5-Ydc" firstAttribute="top" secondItem="GLB-Ed-NZz" secondAttribute="bottom" constant="120" id="R0Q-Qa-35n"/>
                             <constraint firstItem="h9G-ep-bcK" firstAttribute="bottom" secondItem="Upk-P5-Ydc" secondAttribute="bottom" constant="40" id="VBU-2e-4is"/>
+                            <constraint firstItem="GLB-Ed-NZz" firstAttribute="top" secondItem="h9G-ep-bcK" secondAttribute="top" constant="60" id="Vpl-R3-zhy"/>
+                            <constraint firstItem="GLB-Ed-NZz" firstAttribute="leading" secondItem="h9G-ep-bcK" secondAttribute="leading" constant="90" id="cfj-Yf-epq"/>
                             <constraint firstItem="h9G-ep-bcK" firstAttribute="trailing" secondItem="Upk-P5-Ydc" secondAttribute="trailing" constant="40" id="yYA-v1-KIe"/>
                         </constraints>
                     </view>
@@ -522,9 +500,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1aP-Ob-hvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1877.1028037383176" y="-1303.0237580993521"/>
+            <point key="canvasLocation" x="3198" y="-1135"/>
         </scene>
-        <!--Tilføj kaffe-->
+        <!--Add a coffee-->
         <scene sceneID="Ln0-yl-0KR">
             <objects>
                 <viewController id="gUR-X2-iGh" customClass="AddCoffeeViewController" customModule="Broeg" customModuleProvider="target" sceneMemberID="viewController">
@@ -533,123 +511,123 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dLP-9h-T9Y">
-                                <rect key="frame" x="40" y="116" width="348" height="630"/>
+                                <rect key="frame" x="40" y="76" width="348" height="490"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navn på kaffe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk6-NF-6Bx">
-                                        <rect key="frame" x="0.0" y="0.0" width="348" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk6-NF-6Bx">
+                                        <rect key="frame" x="0.0" y="0.0" width="348" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="SbE-aI-26J"/>
+                                            <constraint firstAttribute="height" constant="30" id="SbE-aI-26J"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Navn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QY0-Kr-CXt">
-                                        <rect key="frame" x="0.0" y="40" width="348" height="50"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QY0-Kr-CXt">
+                                        <rect key="frame" x="0.0" y="30" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="d5i-DJ-UYE"/>
+                                            <constraint firstAttribute="height" constant="40" id="d5i-DJ-UYE"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor mange gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inQ-QJ-CnA">
-                                        <rect key="frame" x="0.0" y="90" width="348" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many grams of coffee?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inQ-QJ-CnA">
+                                        <rect key="frame" x="0.0" y="70" width="348" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="11X-9I-ObC"/>
+                                            <constraint firstAttribute="height" constant="30" id="11X-9I-ObC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="g. kaffe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31V-n0-UZg">
-                                        <rect key="frame" x="0.0" y="130" width="348" height="50"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="G. coffee" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31V-n0-UZg">
+                                        <rect key="frame" x="0.0" y="100" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="eMP-Cp-kSR"/>
+                                            <constraint firstAttribute="height" constant="40" id="eMP-Cp-kSR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor meget vand pr. gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbr-Vf-4ZH">
-                                        <rect key="frame" x="0.0" y="180" width="348" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water pr. grams of coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbr-Vf-4ZH">
+                                        <rect key="frame" x="0.0" y="140" width="348" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="j3d-PS-OEJ"/>
+                                            <constraint firstAttribute="height" constant="30" id="j3d-PS-OEJ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ml/g." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ulu-u0-p3j">
-                                        <rect key="frame" x="0.0" y="220" width="348" height="50"/>
+                                        <rect key="frame" x="0.0" y="170" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="MWa-fI-FdX"/>
+                                            <constraint firstAttribute="height" constant="40" id="MWa-fI-FdX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor hurtigt skal vandet fordeles?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCI-U0-bJr">
-                                        <rect key="frame" x="0.0" y="270" width="348" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water distribution time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCI-U0-bJr">
+                                        <rect key="frame" x="0.0" y="210" width="348" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="OoI-YC-y0A"/>
+                                            <constraint firstAttribute="height" constant="30" id="OoI-YC-y0A"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sek." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nbj-M4-a46">
-                                        <rect key="frame" x="0.0" y="310" width="348" height="50"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sec." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nbj-M4-a46">
+                                        <rect key="frame" x="0.0" y="240" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="L2Z-Yd-Z6M"/>
+                                            <constraint firstAttribute="height" constant="40" id="L2Z-Yd-Z6M"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor varmt skal vandet være?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd9-2m-2LF">
-                                        <rect key="frame" x="0.0" y="360" width="348" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How warm should the water be?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd9-2m-2LF">
+                                        <rect key="frame" x="0.0" y="280" width="348" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="PQI-tj-SA4"/>
+                                            <constraint firstAttribute="height" constant="30" id="PQI-tj-SA4"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="C°" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLS-0M-2ri">
-                                        <rect key="frame" x="0.0" y="400" width="348" height="50"/>
+                                        <rect key="frame" x="0.0" y="310" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="hGs-q9-gnW"/>
+                                            <constraint firstAttribute="height" constant="40" id="hGs-q9-gnW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor meget vand skal der bruges til bloom?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6r7-p2-FHa">
-                                        <rect key="frame" x="0.0" y="450" width="348" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount of water used for bloom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6r7-p2-FHa">
+                                        <rect key="frame" x="0.0" y="350" width="348" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="qc5-Oy-7xX"/>
+                                            <constraint firstAttribute="height" constant="30" id="qc5-Oy-7xX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ml." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nvA-ok-mE8">
-                                        <rect key="frame" x="0.0" y="490" width="348" height="50"/>
+                                        <rect key="frame" x="0.0" y="380" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Bdl-ca-f29"/>
+                                            <constraint firstAttribute="height" constant="40" id="Bdl-ca-f29"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor hurtigt skal bloom vandet distribueres?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLD-nt-I2W">
-                                        <rect key="frame" x="0.0" y="540" width="348" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bloom water distribution time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLD-nt-I2W">
+                                        <rect key="frame" x="0.0" y="420" width="348" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="yA5-zd-Ozz"/>
+                                            <constraint firstAttribute="height" constant="30" id="yA5-zd-Ozz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sek." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W90-AQ-QhS">
-                                        <rect key="frame" x="0.0" y="580" width="348" height="50"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sec." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W90-AQ-QhS">
+                                        <rect key="frame" x="0.0" y="450" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Bt6-DP-dWC"/>
+                                            <constraint firstAttribute="height" constant="40" id="Bt6-DP-dWC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -660,12 +638,12 @@
                         <viewLayoutGuide key="safeArea" id="li6-fp-lZY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dLP-9h-T9Y" firstAttribute="top" secondItem="li6-fp-lZY" secondAttribute="top" constant="60" id="OuN-UT-vbO"/>
+                            <constraint firstItem="dLP-9h-T9Y" firstAttribute="top" secondItem="li6-fp-lZY" secondAttribute="top" constant="20" id="OuN-UT-vbO"/>
                             <constraint firstItem="dLP-9h-T9Y" firstAttribute="leading" secondItem="li6-fp-lZY" secondAttribute="leading" constant="40" id="YGt-Uc-eMt"/>
                             <constraint firstItem="li6-fp-lZY" firstAttribute="trailing" secondItem="dLP-9h-T9Y" secondAttribute="trailing" constant="40" id="jUD-Nc-eLe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Tilføj kaffe" id="O6p-ym-KoT">
+                    <navigationItem key="navigationItem" title="Add a coffee" id="O6p-ym-KoT">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nQZ-0t-ZNa">
                             <connections>
                                 <segue destination="1x2-8f-No9" kind="unwind" unwindAction="unwindToTableViewControllerWithSegue:" id="uB2-cq-RrM"/>
@@ -691,9 +669,9 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSD-Pi-ETs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="1x2-8f-No9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5771.4953271028035" y="395.89632829373653"/>
+            <point key="canvasLocation" x="5120" y="349"/>
         </scene>
-        <!--Bryg kaffe-->
+        <!--Brew-->
         <scene sceneID="wJV-Vl-8Zn">
             <objects>
                 <tableViewController id="eCE-6H-siO" customClass="BrewTableViewController" customModule="Broeg" customModuleProvider="target" sceneMemberID="viewController">
@@ -720,7 +698,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Bryg kaffe" id="T2U-ji-YeG">
+                    <navigationItem key="navigationItem" title="Brew" id="T2U-ji-YeG">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FeL-wM-Og2">
                             <connections>
                                 <segue destination="aLJ-pd-FWs" kind="presentation" id="ar0-g0-taz"/>
@@ -731,9 +709,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vtz-WH-gpf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3016.8224299065419" y="348.59611231101513"/>
+            <point key="canvasLocation" x="3199" y="349"/>
         </scene>
-        <!--bryg/rediger din kaffe-->
+        <!--Brew/Edit your coffee-->
         <scene sceneID="Aaa-b6-tb0">
             <objects>
                 <viewController id="S0v-ML-ews" customClass="BrewDetailViewController" customModule="Broeg" customModuleProvider="target" sceneMemberID="viewController">
@@ -742,9 +720,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BkZ-6x-yHw">
-                                <rect key="frame" x="40" y="128" width="348" height="500"/>
+                                <rect key="frame" x="40" y="128" width="348" height="440"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor mange gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EV-qG-EfI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many grams of coffee?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EV-qG-EfI">
                                         <rect key="frame" x="0.0" y="0.0" width="348" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Vjo-I9-ARN"/>
@@ -753,16 +731,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="g. kaffe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJS-De-zoa">
-                                        <rect key="frame" x="0.0" y="25" width="348" height="50"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="G. coffee" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJS-De-zoa">
+                                        <rect key="frame" x="0.0" y="25" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="plF-lk-aQY"/>
+                                            <constraint firstAttribute="height" constant="40" id="plF-lk-aQY"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor meget vand pr. gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVJ-h2-Q0X">
-                                        <rect key="frame" x="0.0" y="75" width="348" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water pr. grams of coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVJ-h2-Q0X">
+                                        <rect key="frame" x="0.0" y="65" width="348" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="2fV-F4-sin"/>
                                         </constraints>
@@ -771,15 +749,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ml/g." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C8x-eU-Ukp">
-                                        <rect key="frame" x="0.0" y="100" width="348" height="50"/>
+                                        <rect key="frame" x="0.0" y="90" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Wi7-Ym-lOY"/>
+                                            <constraint firstAttribute="height" constant="40" id="Wi7-Ym-lOY"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor hurtigt skal vandet fordeles?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-hA-kNr">
-                                        <rect key="frame" x="0.0" y="150" width="348" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water distribution time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-hA-kNr">
+                                        <rect key="frame" x="0.0" y="130" width="348" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Pp3-Gn-Ttj"/>
                                         </constraints>
@@ -787,16 +765,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sek." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iCg-2U-Ku9">
-                                        <rect key="frame" x="0.0" y="175" width="348" height="50"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sec." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iCg-2U-Ku9">
+                                        <rect key="frame" x="0.0" y="155" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="GeW-8Z-K3S"/>
+                                            <constraint firstAttribute="height" constant="40" id="GeW-8Z-K3S"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor varmt skal vandet være?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoW-Rv-tBA">
-                                        <rect key="frame" x="0.0" y="225" width="348" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How warm should the water be?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoW-Rv-tBA">
+                                        <rect key="frame" x="0.0" y="195" width="348" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="HR0-TZ-8jb"/>
                                         </constraints>
@@ -805,15 +783,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="C°" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XJI-im-mQw">
-                                        <rect key="frame" x="0.0" y="250" width="348" height="50"/>
+                                        <rect key="frame" x="0.0" y="220" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="cM7-AO-vDz"/>
+                                            <constraint firstAttribute="height" constant="40" id="cM7-AO-vDz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor meget vand skal der bruges til bloom?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ6-0w-WfG">
-                                        <rect key="frame" x="0.0" y="300" width="348" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount of water used for bloom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ6-0w-WfG">
+                                        <rect key="frame" x="0.0" y="260" width="348" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Aup-uZ-d6z"/>
                                         </constraints>
@@ -822,15 +800,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ml." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HLV-sO-Uwo">
-                                        <rect key="frame" x="0.0" y="325" width="348" height="50"/>
+                                        <rect key="frame" x="0.0" y="285" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="mMm-yX-kDT"/>
+                                            <constraint firstAttribute="height" constant="40" id="mMm-yX-kDT"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor hurtigt skal bloom vandet distribueres?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnN-ki-5cm">
-                                        <rect key="frame" x="0.0" y="375" width="348" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bloom water distribution time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnN-ki-5cm">
+                                        <rect key="frame" x="0.0" y="325" width="348" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="U58-ES-dml"/>
                                         </constraints>
@@ -838,16 +816,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sek." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5lN-dw-0L9">
-                                        <rect key="frame" x="0.0" y="400" width="348" height="50"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sec." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5lN-dw-0L9">
+                                        <rect key="frame" x="0.0" y="350" width="348" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="8Xk-Kg-aPQ"/>
+                                            <constraint firstAttribute="height" constant="40" id="8Xk-Kg-aPQ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGa-Hf-gFw">
-                                        <rect key="frame" x="0.0" y="450" width="348" height="50"/>
+                                        <rect key="frame" x="0.0" y="390" width="348" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="O9L-oM-jFL"/>
                                         </constraints>
@@ -867,7 +845,7 @@
                             <constraint firstItem="BkZ-6x-yHw" firstAttribute="leading" secondItem="EwS-uw-d5G" secondAttribute="leading" constant="40" id="uyL-We-uCG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="bryg/rediger din kaffe" id="gMu-3O-jXo"/>
+                    <navigationItem key="navigationItem" title="Brew/Edit your coffee" id="gMu-3O-jXo"/>
                     <connections>
                         <outlet property="bloomWater" destination="HLV-sO-Uwo" id="SIM-4e-4Uk"/>
                         <outlet property="bloomWaterDistr" destination="5lN-dw-0L9" id="lBE-yh-3eh"/>
@@ -880,7 +858,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cD5-Y4-Xcz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4086" y="816"/>
+            <point key="canvasLocation" x="3198" y="1107"/>
         </scene>
         <!--Brew Timer-->
         <scene sceneID="R1l-4d-feS">
@@ -946,7 +924,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="auL-iz-yWS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="kjf-zG-8fG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="6501.8691588785041" y="1169.5464362850973"/>
+            <point key="canvasLocation" x="5120" y="1107"/>
         </scene>
         <!--Settings-->
         <scene sceneID="P78-Aw-wPz">
@@ -998,7 +976,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Kf-jT-BXW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2272" y="-462"/>
+            <point key="canvasLocation" x="2312" y="1107"/>
         </scene>
         <!--Home-->
         <scene sceneID="gcQ-vE-wEL">
@@ -1013,7 +991,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Ire-0D-dO7"/>
                                 </constraints>
-                                <state key="normal" title="Brøg kaffe"/>
+                                <state key="normal" title="Brew coffee"/>
                                 <connections>
                                     <segue destination="eCE-6H-siO" kind="show" id="TQ5-Fg-2xT"/>
                                 </connections>
@@ -1024,7 +1002,7 @@
                                     <constraint firstAttribute="height" constant="100" id="7du-C3-jLZ"/>
                                     <constraint firstAttribute="width" constant="120" id="S73-bT-Szp"/>
                                 </constraints>
-                                <state key="normal" title="Historik"/>
+                                <state key="normal" title="History"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hf-wF-WSv">
                                 <rect key="frame" x="268" y="348" width="120" height="100"/>
@@ -1032,7 +1010,7 @@
                                     <constraint firstAttribute="height" constant="100" id="1Ui-F3-QN3"/>
                                     <constraint firstAttribute="width" constant="120" id="fH7-gZ-a1L"/>
                                 </constraints>
-                                <state key="normal" title="Rens"/>
+                                <state key="normal" title="Cleanse"/>
                                 <connections>
                                     <segue destination="99K-cb-jLl" kind="presentation" id="7a0-8K-mUQ"/>
                                 </connections>
@@ -1107,7 +1085,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQF-P0-YAp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4872.8971962616815" y="395.89632829373653"/>
+            <point key="canvasLocation" x="4171" y="349"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wiK-FU-jXm">
@@ -1125,7 +1103,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRe-BE-JLt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1738.3177570093458" y="-523.54211663066963"/>
+            <point key="canvasLocation" x="2312" y="-400"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kA4-lx-TPe">
@@ -1143,7 +1121,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPw-1u-YxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-930.841121495327" y="-1309.5032397408208"/>
+            <point key="canvasLocation" x="2312" y="-1135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3yg-Un-vxz">
@@ -1161,7 +1139,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yiC-h9-hZE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2875.233644859813" y="-1303.0237580993521"/>
+            <point key="canvasLocation" x="4171" y="-1135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IVQ-Vu-Rog">
@@ -1179,11 +1157,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAx-5F-Mqz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5601.8691588785041" y="1169.5464362850973"/>
+            <point key="canvasLocation" x="4171" y="1107"/>
         </scene>
     </scenes>
     <resources>
-        <image name="gearshape" catalog="system" width="32" height="32"/>
+        <image name="Image" width="1060" height="2427"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
