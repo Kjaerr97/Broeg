@@ -51,11 +51,10 @@ class BrewTableViewController: UITableViewController {
                     self.sortCoffeeList()
                     self.dGroup.leave()
                     
-                    
-                    for element in self.coffeeList {
-                        print(element.name)
-                    }
             }
+                for element in self.coffeeList {
+                    print(element.name)
+                }
         }
             self.dGroup.notify(queue: .main) {
                 self.tableView.reloadData()
@@ -143,12 +142,11 @@ class BrewTableViewController: UITableViewController {
     
     @IBAction func unwindToTableViewController(segue: UIStoryboardSegue) {
         let addCoffeeViewController = segue.source as! AddCoffeeViewController
-        
-        if let cofee = addCoffeeViewController.coffee {
-            coffeeList.append(cofee)
-            sortCoffeeList()
-            self.tableView.reloadData()
-        }
+                if let cofee = addCoffeeViewController.coffee {
+                    coffeeList.append(cofee)
+                    sortCoffeeList()
+                    self.tableView.reloadData()
+                }
     }
 
 }
