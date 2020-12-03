@@ -853,7 +853,6 @@
             </objects>
             <point key="canvasLocation" x="4086" y="816"/>
         </scene>
-<<<<<<< Updated upstream
         <!--Brew Timer-->
         <scene sceneID="R1l-4d-feS">
             <objects>
@@ -905,7 +904,6 @@
                 <exit id="kjf-zG-8fG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6501.8691588785041" y="1169.5464362850973"/>
-=======
         <!--Settings-->
         <scene sceneID="P78-Aw-wPz">
             <objects>
@@ -957,7 +955,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Kf-jT-BXW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2272" y="-462"/>
->>>>>>> Stashed changes
         </scene>
         <!--Home-->
         <scene sceneID="gcQ-vE-wEL">
@@ -1152,7 +1149,6 @@
             <point key="canvasLocation" x="5601.8691588785041" y="1169.5464362850973"/>
         </scene>
     </scenes>
-<<<<<<< Updated upstream
     <designables>
         <designable name="I4a-xL-fXS">
             <size key="intrinsicContentSize" width="34" height="30"/>
@@ -1167,23 +1163,18 @@
             <size key="intrinsicContentSize" width="91" height="30"/>
         </designable>
     </designables>
-=======
->>>>>>> Stashed changes
     <resources>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-<<<<<<< Updated upstream
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-=======
->>>>>>> Stashed changes
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
