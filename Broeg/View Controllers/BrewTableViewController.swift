@@ -18,7 +18,15 @@ class BrewTableViewController: UITableViewController {
     
     let dGroup = DispatchGroup()
     
-    func getCoffeeData() {
+    
+    override func viewDidLoad() {
+        fetchCoffeeData()
+        super.viewDidLoad()
+        self.tableView.reloadData()
+
+    }
+    
+    func fetchCoffeeData() {
         let user = Auth.auth().currentUser?.uid
         let ref = db.collection("users").document(user ?? "").collection("coffeeList")
         ref.getDocuments { (querySnapshot,err ) in
@@ -40,26 +48,22 @@ class BrewTableViewController: UITableViewController {
                     ]
                     let coffee = Coffee(dictionary: dict as [String : Any])
                     self.coffeeList.append(coffee!)
+                    self.sortCoffeeList()
                     self.dGroup.leave()
+                    
                     
                     for element in self.coffeeList {
                         print(element.name)
                     }
             }
         }
+            self.dGroup.notify(queue: .main) {
+                self.tableView.reloadData()
+            }
     }
-        self.dGroup.notify(queue: .main){
-            self.tableView.reloadData()
-        }
+        
         
 }
-
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        getCoffeeData()
-        self.tableView.reloadData()
-    }
     
     
     func CoffeeTappedOn(cell: UITableViewCell) {
