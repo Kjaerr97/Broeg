@@ -532,122 +532,137 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navn på kaffe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk6-NF-6Bx">
-                                <rect key="frame" x="20" y="80" width="105" height="20.666666666666671"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Navn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QY0-Kr-CXt">
-                                <rect key="frame" x="20" y="108.66666666666667" width="214" height="34.000000000000014"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor mange gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inQ-QJ-CnA">
-                                <rect key="frame" x="20" y="150.66666666666666" width="187" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="g. kaffe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31V-n0-UZg">
-                                <rect key="frame" x="20" y="179" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor meget vand pr. gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbr-Vf-4ZH">
-                                <rect key="frame" x="19.999999999999986" y="221" width="248.66666666666663" height="20.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ml/g." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ulu-u0-p3j">
-                                <rect key="frame" x="20" y="249.66666666666663" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor hurtigt skal vandet fordeles?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCI-U0-bJr">
-                                <rect key="frame" x="20" y="291.66666666666669" width="256.66666666666669" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sek." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nbj-M4-a46">
-                                <rect key="frame" x="20" y="320" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor varmt skal vandet være?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd9-2m-2LF">
-                                <rect key="frame" x="20" y="362" width="226" height="20.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="C°" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLS-0M-2ri">
-                                <rect key="frame" x="20" y="390.66666666666669" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor meget vand skal der bruges til bloom?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6r7-p2-FHa">
-                                <rect key="frame" x="20" y="432.66666666666669" width="330" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ml." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nvA-ok-mE8">
-                                <rect key="frame" x="20" y="461" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor hurtigt skal bloom vandet distribueres?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLD-nt-I2W">
-                                <rect key="frame" x="20" y="503.00000000000006" width="336.66666666666669" height="20.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sek." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W90-AQ-QhS">
-                                <rect key="frame" x="20" y="531.66666666666663" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dLP-9h-T9Y">
+                                <rect key="frame" x="40" y="116" width="348" height="630"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navn på kaffe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk6-NF-6Bx">
+                                        <rect key="frame" x="0.0" y="0.0" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="SbE-aI-26J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Navn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QY0-Kr-CXt">
+                                        <rect key="frame" x="0.0" y="40" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="d5i-DJ-UYE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor mange gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inQ-QJ-CnA">
+                                        <rect key="frame" x="0.0" y="90" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="11X-9I-ObC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="g. kaffe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31V-n0-UZg">
+                                        <rect key="frame" x="0.0" y="130" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eMP-Cp-kSR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor meget vand pr. gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbr-Vf-4ZH">
+                                        <rect key="frame" x="0.0" y="180" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="j3d-PS-OEJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ml/g." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ulu-u0-p3j">
+                                        <rect key="frame" x="0.0" y="220" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MWa-fI-FdX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor hurtigt skal vandet fordeles?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCI-U0-bJr">
+                                        <rect key="frame" x="0.0" y="270" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="OoI-YC-y0A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sek." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nbj-M4-a46">
+                                        <rect key="frame" x="0.0" y="310" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="L2Z-Yd-Z6M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor varmt skal vandet være?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd9-2m-2LF">
+                                        <rect key="frame" x="0.0" y="360" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PQI-tj-SA4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="C°" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLS-0M-2ri">
+                                        <rect key="frame" x="0.0" y="400" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hGs-q9-gnW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor meget vand skal der bruges til bloom?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6r7-p2-FHa">
+                                        <rect key="frame" x="0.0" y="450" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="qc5-Oy-7xX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ml." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nvA-ok-mE8">
+                                        <rect key="frame" x="0.0" y="490" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Bdl-ca-f29"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor hurtigt skal bloom vandet distribueres?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLD-nt-I2W">
+                                        <rect key="frame" x="0.0" y="540" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="yA5-zd-Ozz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sek." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W90-AQ-QhS">
+                                        <rect key="frame" x="0.0" y="580" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Bt6-DP-dWC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="li6-fp-lZY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="inQ-QJ-CnA" firstAttribute="leading" secondItem="31V-n0-UZg" secondAttribute="leading" id="33T-Ux-Ifh"/>
-                            <constraint firstItem="li6-fp-lZY" firstAttribute="trailing" secondItem="QY0-Kr-CXt" secondAttribute="trailing" constant="194" id="4B0-xI-zqo"/>
-                            <constraint firstItem="ulu-u0-p3j" firstAttribute="trailing" secondItem="Nbj-M4-a46" secondAttribute="trailing" id="4qo-BY-V5k"/>
-                            <constraint firstItem="xd9-2m-2LF" firstAttribute="top" secondItem="Nbj-M4-a46" secondAttribute="bottom" constant="8" id="5AE-dL-uwl"/>
-                            <constraint firstItem="Nbj-M4-a46" firstAttribute="leading" secondItem="xd9-2m-2LF" secondAttribute="leading" id="5RC-oB-Fhq"/>
-                            <constraint firstItem="QY0-Kr-CXt" firstAttribute="top" secondItem="bk6-NF-6Bx" secondAttribute="bottom" constant="8" id="5sK-Ah-u3S"/>
-                            <constraint firstItem="bLS-0M-2ri" firstAttribute="trailing" secondItem="nvA-ok-mE8" secondAttribute="trailing" id="9y2-di-DNI"/>
-                            <constraint firstItem="ulu-u0-p3j" firstAttribute="top" secondItem="hbr-Vf-4ZH" secondAttribute="bottom" constant="8" id="AZi-vo-Fdl"/>
-                            <constraint firstItem="Nbj-M4-a46" firstAttribute="trailing" secondItem="bLS-0M-2ri" secondAttribute="trailing" id="Dxg-SK-Bez"/>
-                            <constraint firstItem="31V-n0-UZg" firstAttribute="leading" secondItem="hbr-Vf-4ZH" secondAttribute="leading" id="FQn-mt-AEx"/>
-                            <constraint firstItem="nvA-ok-mE8" firstAttribute="top" secondItem="6r7-p2-FHa" secondAttribute="bottom" constant="8" id="IRa-76-YzX"/>
-                            <constraint firstItem="uLD-nt-I2W" firstAttribute="leading" secondItem="W90-AQ-QhS" secondAttribute="leading" id="JMi-fI-vJ9"/>
-                            <constraint firstItem="31V-n0-UZg" firstAttribute="top" secondItem="inQ-QJ-CnA" secondAttribute="bottom" constant="8" id="NZ9-Gw-lIW"/>
-                            <constraint firstItem="JCI-U0-bJr" firstAttribute="top" secondItem="ulu-u0-p3j" secondAttribute="bottom" constant="8" id="P5O-Iv-Wtr"/>
-                            <constraint firstItem="bLS-0M-2ri" firstAttribute="top" secondItem="xd9-2m-2LF" secondAttribute="bottom" constant="8" id="PjX-na-Pgj"/>
-                            <constraint firstItem="JCI-U0-bJr" firstAttribute="leading" secondItem="Nbj-M4-a46" secondAttribute="leading" id="QHx-qE-cF2"/>
-                            <constraint firstItem="nvA-ok-mE8" firstAttribute="trailing" secondItem="W90-AQ-QhS" secondAttribute="trailing" id="S4c-Oe-ey1"/>
-                            <constraint firstItem="Nbj-M4-a46" firstAttribute="top" secondItem="JCI-U0-bJr" secondAttribute="bottom" constant="8" id="V3o-Mh-PpI"/>
-                            <constraint firstItem="bk6-NF-6Bx" firstAttribute="top" secondItem="li6-fp-lZY" secondAttribute="top" constant="24" id="Wie-A8-hPK"/>
-                            <constraint firstItem="bLS-0M-2ri" firstAttribute="leading" secondItem="6r7-p2-FHa" secondAttribute="leading" id="bIE-Kq-7du"/>
-                            <constraint firstItem="6r7-p2-FHa" firstAttribute="top" secondItem="bLS-0M-2ri" secondAttribute="bottom" constant="8" id="c9y-4s-6kn"/>
-                            <constraint firstItem="W90-AQ-QhS" firstAttribute="top" secondItem="uLD-nt-I2W" secondAttribute="bottom" constant="8" id="cP6-eT-rTf"/>
-                            <constraint firstItem="QY0-Kr-CXt" firstAttribute="trailing" secondItem="31V-n0-UZg" secondAttribute="trailing" id="euW-H5-8sG"/>
-                            <constraint firstItem="hbr-Vf-4ZH" firstAttribute="leading" secondItem="ulu-u0-p3j" secondAttribute="leading" id="fhm-SI-Twq"/>
-                            <constraint firstItem="ulu-u0-p3j" firstAttribute="leading" secondItem="JCI-U0-bJr" secondAttribute="leading" id="i0u-Fn-0gT"/>
-                            <constraint firstItem="6r7-p2-FHa" firstAttribute="leading" secondItem="nvA-ok-mE8" secondAttribute="leading" id="i6A-Qs-qCx"/>
-                            <constraint firstItem="nvA-ok-mE8" firstAttribute="leading" secondItem="uLD-nt-I2W" secondAttribute="leading" id="iNJ-Xw-2aI"/>
-                            <constraint firstItem="uLD-nt-I2W" firstAttribute="top" secondItem="nvA-ok-mE8" secondAttribute="bottom" constant="8" id="iTS-Ep-f2B"/>
-                            <constraint firstItem="bk6-NF-6Bx" firstAttribute="leading" secondItem="QY0-Kr-CXt" secondAttribute="leading" id="ndg-H0-xMp"/>
-                            <constraint firstItem="inQ-QJ-CnA" firstAttribute="top" secondItem="QY0-Kr-CXt" secondAttribute="bottom" constant="8" id="qmV-PC-SHw"/>
-                            <constraint firstItem="xd9-2m-2LF" firstAttribute="leading" secondItem="bLS-0M-2ri" secondAttribute="leading" id="r0P-kL-b51"/>
-                            <constraint firstItem="QY0-Kr-CXt" firstAttribute="leading" secondItem="inQ-QJ-CnA" secondAttribute="leading" id="wUS-gR-TmW"/>
-                            <constraint firstItem="hbr-Vf-4ZH" firstAttribute="top" secondItem="31V-n0-UZg" secondAttribute="bottom" constant="8" id="xYi-Pl-CKB"/>
-                            <constraint firstItem="31V-n0-UZg" firstAttribute="trailing" secondItem="ulu-u0-p3j" secondAttribute="trailing" id="xh7-AT-s7z"/>
-                            <constraint firstItem="bk6-NF-6Bx" firstAttribute="leading" secondItem="vmi-Fl-iyx" secondAttribute="leadingMargin" id="zkw-EE-Pvk"/>
+                            <constraint firstItem="dLP-9h-T9Y" firstAttribute="top" secondItem="li6-fp-lZY" secondAttribute="top" constant="60" id="OuN-UT-vbO"/>
+                            <constraint firstItem="dLP-9h-T9Y" firstAttribute="leading" secondItem="li6-fp-lZY" secondAttribute="leading" constant="40" id="YGt-Uc-eMt"/>
+                            <constraint firstItem="li6-fp-lZY" firstAttribute="trailing" secondItem="dLP-9h-T9Y" secondAttribute="trailing" constant="40" id="jUD-Nc-eLe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tilføj kaffe" id="O6p-ym-KoT">
@@ -726,117 +741,133 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor mange gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EV-qG-EfI">
-                                <rect key="frame" x="20" y="143" width="187" height="20.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="g. kaffe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJS-De-zoa">
-                                <rect key="frame" x="20" y="172.33333333333334" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor meget vand pr. gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVJ-h2-Q0X">
-                                <rect key="frame" x="19.999999999999986" y="213.66666666666666" width="248.66666666666663" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ml/g." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C8x-eU-Ukp">
-                                <rect key="frame" x="20" y="242" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor hurtigt skal vandet fordeles?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-hA-kNr">
-                                <rect key="frame" x="20" y="284" width="256.66666666666669" height="20.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sek." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iCg-2U-Ku9">
-                                <rect key="frame" x="20" y="313.33333333333331" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor varmt skal vandet være?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoW-Rv-tBA">
-                                <rect key="frame" x="20" y="354.66666666666669" width="226" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="C°" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XJI-im-mQw">
-                                <rect key="frame" x="20" y="383" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor meget vand skal der bruges til bloom?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ6-0w-WfG">
-                                <rect key="frame" x="20" y="425" width="330" height="20.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ml." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HLV-sO-Uwo">
-                                <rect key="frame" x="20" y="454.33333333333331" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor hurtigt skal bloom vandet distribueres?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnN-ki-5cm">
-                                <rect key="frame" x="20" y="495.66666666666669" width="336.66666666666669" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sek." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5lN-dw-0L9">
-                                <rect key="frame" x="20" y="524" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGa-Hf-gFw" customClass="RoundButton" customModule="Broeg" customModuleProvider="target">
-                                <rect key="frame" x="89" y="665" width="250" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <state key="normal" title="Brew coffeee">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="8aD-Gf-123" kind="presentation" id="dQ5-8J-VKk"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BkZ-6x-yHw">
+                                <rect key="frame" x="40" y="148" width="348" height="590"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor mange gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EV-qG-EfI">
+                                        <rect key="frame" x="0.0" y="0.0" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Vjo-I9-ARN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="g. kaffe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJS-De-zoa">
+                                        <rect key="frame" x="0.0" y="40" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="plF-lk-aQY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor meget vand pr. gram kaffe?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVJ-h2-Q0X">
+                                        <rect key="frame" x="0.0" y="90" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2fV-F4-sin"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ml/g." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C8x-eU-Ukp">
+                                        <rect key="frame" x="0.0" y="130" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Wi7-Ym-lOY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor hurtigt skal vandet fordeles?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-hA-kNr">
+                                        <rect key="frame" x="0.0" y="180" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Pp3-Gn-Ttj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sek." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iCg-2U-Ku9">
+                                        <rect key="frame" x="0.0" y="220" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GeW-8Z-K3S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor varmt skal vandet være?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoW-Rv-tBA">
+                                        <rect key="frame" x="0.0" y="270" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="HR0-TZ-8jb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="C°" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XJI-im-mQw">
+                                        <rect key="frame" x="0.0" y="310" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cM7-AO-vDz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor meget vand skal der bruges til bloom?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ6-0w-WfG">
+                                        <rect key="frame" x="0.0" y="360" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Aup-uZ-d6z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ml." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HLV-sO-Uwo">
+                                        <rect key="frame" x="0.0" y="400" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="mMm-yX-kDT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor hurtigt skal bloom vandet distribueres?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnN-ki-5cm">
+                                        <rect key="frame" x="0.0" y="450" width="348" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="U58-ES-dml"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sek." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5lN-dw-0L9">
+                                        <rect key="frame" x="0.0" y="490" width="348" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8Xk-Kg-aPQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGa-Hf-gFw" customClass="RoundButton" customModule="Broeg" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="540" width="348" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="O9L-oM-jFL"/>
+                                        </constraints>
+                                        <state key="normal" title="Brew coffeee">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="8aD-Gf-123" kind="presentation" id="dQ5-8J-VKk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EwS-uw-d5G"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xQ6-0w-WfG" firstAttribute="top" secondItem="XJI-im-mQw" secondAttribute="bottom" constant="8" id="05m-eM-iLa"/>
-                            <constraint firstItem="HLV-sO-Uwo" firstAttribute="trailing" secondItem="5lN-dw-0L9" secondAttribute="trailing" id="1F3-r2-IH7"/>
-                            <constraint firstItem="XJI-im-mQw" firstAttribute="top" secondItem="uoW-Rv-tBA" secondAttribute="bottom" constant="8" id="3Tz-88-bnl"/>
-                            <constraint firstItem="xQ6-0w-WfG" firstAttribute="leading" secondItem="HLV-sO-Uwo" secondAttribute="leading" id="3yf-5N-60g"/>
-                            <constraint firstItem="iCg-2U-Ku9" firstAttribute="trailing" secondItem="XJI-im-mQw" secondAttribute="trailing" id="Ghw-LS-t0j"/>
-                            <constraint firstItem="XJI-im-mQw" firstAttribute="trailing" secondItem="HLV-sO-Uwo" secondAttribute="trailing" id="HB2-SI-7y0"/>
-                            <constraint firstItem="iCg-2U-Ku9" firstAttribute="top" secondItem="XYF-hA-kNr" secondAttribute="bottom" constant="8.5" id="Jpy-ds-ZgS"/>
-                            <constraint firstItem="XYF-hA-kNr" firstAttribute="top" secondItem="C8x-eU-Ukp" secondAttribute="bottom" constant="8" id="L47-0m-lQs"/>
-                            <constraint firstItem="XYF-hA-kNr" firstAttribute="leading" secondItem="iCg-2U-Ku9" secondAttribute="leading" id="Let-Cu-Nzk"/>
-                            <constraint firstItem="HLV-sO-Uwo" firstAttribute="leading" secondItem="tnN-ki-5cm" secondAttribute="leading" id="MAt-FH-h33"/>
-                            <constraint firstItem="tnN-ki-5cm" firstAttribute="leading" secondItem="5lN-dw-0L9" secondAttribute="leading" id="MYK-aU-eCQ"/>
-                            <constraint firstItem="QJS-De-zoa" firstAttribute="top" secondItem="7EV-qG-EfI" secondAttribute="bottom" constant="8.5" id="OPN-Y6-SGz"/>
-                            <constraint firstItem="XJI-im-mQw" firstAttribute="leading" secondItem="xQ6-0w-WfG" secondAttribute="leading" id="RdD-qf-smW"/>
-                            <constraint firstItem="nVJ-h2-Q0X" firstAttribute="leading" secondItem="C8x-eU-Ukp" secondAttribute="leading" id="Sho-5e-BKE"/>
-                            <constraint firstItem="QJS-De-zoa" firstAttribute="leading" secondItem="nVJ-h2-Q0X" secondAttribute="leading" id="TSX-9Y-Oni"/>
-                            <constraint firstItem="7EV-qG-EfI" firstAttribute="top" secondItem="EwS-uw-d5G" secondAttribute="top" constant="55" id="UKF-j0-K5N"/>
-                            <constraint firstItem="C8x-eU-Ukp" firstAttribute="trailing" secondItem="iCg-2U-Ku9" secondAttribute="trailing" id="WXC-RW-AYg"/>
-                            <constraint firstItem="EwS-uw-d5G" firstAttribute="trailing" secondItem="QJS-De-zoa" secondAttribute="trailing" constant="194" id="dUo-vt-t5H"/>
-                            <constraint firstItem="C8x-eU-Ukp" firstAttribute="leading" secondItem="XYF-hA-kNr" secondAttribute="leading" id="dod-9Q-5wK"/>
-                            <constraint firstItem="nVJ-h2-Q0X" firstAttribute="top" secondItem="QJS-De-zoa" secondAttribute="bottom" constant="7.5" id="jfL-0D-1Mq"/>
-                            <constraint firstItem="QJS-De-zoa" firstAttribute="trailing" secondItem="C8x-eU-Ukp" secondAttribute="trailing" id="jx1-R1-GOa"/>
-                            <constraint firstItem="C8x-eU-Ukp" firstAttribute="top" secondItem="nVJ-h2-Q0X" secondAttribute="bottom" constant="8" id="o5T-2g-pBP"/>
-                            <constraint firstItem="iCg-2U-Ku9" firstAttribute="leading" secondItem="uoW-Rv-tBA" secondAttribute="leading" id="oL8-ov-px4"/>
-                            <constraint firstItem="7EV-qG-EfI" firstAttribute="leading" secondItem="QJS-De-zoa" secondAttribute="leading" id="obj-rG-0sh"/>
-                            <constraint firstItem="5lN-dw-0L9" firstAttribute="top" secondItem="tnN-ki-5cm" secondAttribute="bottom" constant="8" id="vxY-6v-Ioc"/>
-                            <constraint firstItem="uoW-Rv-tBA" firstAttribute="leading" secondItem="XJI-im-mQw" secondAttribute="leading" id="wib-kW-0z3"/>
-                            <constraint firstItem="tnN-ki-5cm" firstAttribute="top" secondItem="HLV-sO-Uwo" secondAttribute="bottom" constant="7.5" id="xOJ-7n-nee"/>
-                            <constraint firstItem="uoW-Rv-tBA" firstAttribute="top" secondItem="iCg-2U-Ku9" secondAttribute="bottom" constant="7.5" id="xc5-x0-82J"/>
-                            <constraint firstItem="7EV-qG-EfI" firstAttribute="leading" secondItem="tq5-x3-e4s" secondAttribute="leadingMargin" id="y2i-Ka-RAb"/>
-                            <constraint firstItem="HLV-sO-Uwo" firstAttribute="top" secondItem="xQ6-0w-WfG" secondAttribute="bottom" constant="8.5" id="yng-Vr-W4t"/>
+                            <constraint firstItem="BkZ-6x-yHw" firstAttribute="top" secondItem="EwS-uw-d5G" secondAttribute="top" constant="60" id="Bn4-0T-ebB"/>
+                            <constraint firstItem="EwS-uw-d5G" firstAttribute="trailing" secondItem="BkZ-6x-yHw" secondAttribute="trailing" constant="40" id="cgv-2p-Hus"/>
+                            <constraint firstItem="BkZ-6x-yHw" firstAttribute="leading" secondItem="EwS-uw-d5G" secondAttribute="leading" constant="40" id="uyL-We-uCG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="bryg/rediger din kaffe" id="gMu-3O-jXo"/>
@@ -861,24 +892,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brewing your coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymi-6a-yPd">
-                                <rect key="frame" x="135" y="365" width="164" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brewing your coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymi-6a-yPd">
+                                <rect key="frame" x="130" y="363" width="168" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="dMP-VJ-Lad"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J6m-vq-VaB">
-                                <rect key="frame" x="94" y="130" width="246" height="198"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J6m-vq-VaB">
+                                <rect key="frame" x="91" y="116" width="246" height="210"/>
                             </imageView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="21J-Pg-nUS">
-                                <rect key="frame" x="84" y="501" width="261" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="21J-Pg-nUS">
+                                <rect key="frame" x="80" y="501" width="268" height="4"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time left:  seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOL-8f-r3n">
-                                <rect key="frame" x="84" y="472" width="237" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time left:  seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOL-8f-r3n">
+                                <rect key="frame" x="90" y="470" width="248" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -886,6 +916,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cy2-b3-Qwp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cy2-b3-Qwp" firstAttribute="trailing" secondItem="21J-Pg-nUS" secondAttribute="trailing" constant="80" id="Pek-ZI-pCy"/>
+                            <constraint firstItem="cy2-b3-Qwp" firstAttribute="trailing" secondItem="J6m-vq-VaB" secondAttribute="trailing" constant="91" id="RKc-Zm-sKy"/>
+                            <constraint firstItem="21J-Pg-nUS" firstAttribute="top" secondItem="mOL-8f-r3n" secondAttribute="bottom" constant="10" id="UsA-RZ-Ki7"/>
+                            <constraint firstItem="mOL-8f-r3n" firstAttribute="top" secondItem="ymi-6a-yPd" secondAttribute="bottom" constant="46" id="Vbx-9N-hzf"/>
+                            <constraint firstItem="21J-Pg-nUS" firstAttribute="leading" secondItem="cy2-b3-Qwp" secondAttribute="leading" constant="80" id="X1T-hY-aEY"/>
+                            <constraint firstItem="cy2-b3-Qwp" firstAttribute="trailing" secondItem="mOL-8f-r3n" secondAttribute="trailing" constant="90" id="XN2-Zu-svt"/>
+                            <constraint firstItem="ymi-6a-yPd" firstAttribute="leading" secondItem="cy2-b3-Qwp" secondAttribute="leading" constant="130" id="egP-ZK-FyG"/>
+                            <constraint firstItem="J6m-vq-VaB" firstAttribute="top" secondItem="cy2-b3-Qwp" secondAttribute="top" constant="60" id="esU-sT-YOL"/>
+                            <constraint firstItem="cy2-b3-Qwp" firstAttribute="trailing" secondItem="ymi-6a-yPd" secondAttribute="trailing" constant="130" id="nBv-xV-2Ou"/>
+                            <constraint firstItem="J6m-vq-VaB" firstAttribute="leading" secondItem="cy2-b3-Qwp" secondAttribute="leading" constant="91" id="oak-BJ-clZ"/>
+                            <constraint firstItem="mOL-8f-r3n" firstAttribute="leading" secondItem="cy2-b3-Qwp" secondAttribute="leading" constant="90" id="s1d-1E-aUM"/>
+                            <constraint firstItem="ymi-6a-yPd" firstAttribute="top" secondItem="J6m-vq-VaB" secondAttribute="bottom" constant="37" id="uKP-PU-y9N"/>
+                            <constraint firstItem="cy2-b3-Qwp" firstAttribute="bottom" secondItem="21J-Pg-nUS" secondAttribute="bottom" constant="333" id="zHs-nt-cm4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ImP-cM-jtD">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="3t5-rN-CoC">
@@ -1150,31 +1195,14 @@
             <point key="canvasLocation" x="5601.8691588785041" y="1169.5464362850973"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="I4a-xL-fXS">
-            <size key="intrinsicContentSize" width="34" height="30"/>
-        </designable>
-        <designable name="XHi-vX-hSi">
-            <size key="intrinsicContentSize" width="113" height="44"/>
-        </designable>
-        <designable name="cvr-fa-15P">
-            <size key="intrinsicContentSize" width="53" height="30"/>
-        </designable>
-        <designable name="nGa-Hf-gFw">
-            <size key="intrinsicContentSize" width="91" height="30"/>
-        </designable>
-    </designables>
     <resources>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="gearshape" catalog="system" width="32" height="32"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

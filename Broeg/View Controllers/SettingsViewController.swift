@@ -30,7 +30,6 @@ class SettingsViewController: UIViewController {
     func signOut() {
         do {
             try Auth.auth().signOut()
-            
             let welcomeController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.welcomeViewController) as? welcomeViewController
             self.view.window?.rootViewController = welcomeController
             self.view.window?.makeKeyAndVisible()
@@ -57,6 +56,9 @@ class SettingsViewController: UIViewController {
                 print("Error removing document: \(err)")
             } else {
                 print("Document successfully removed!")
+                let welcomeController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.welcomeViewController) as? welcomeViewController
+                self.view.window?.rootViewController = welcomeController
+                self.view.window?.makeKeyAndVisible()
             }
         }
     }

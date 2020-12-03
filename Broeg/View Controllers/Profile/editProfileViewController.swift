@@ -81,9 +81,7 @@ class editProfileViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if sender as? UIBarButtonItem == saveChanges {
-            print("test")
             updateProfile()
             
         }
