@@ -24,6 +24,8 @@ class BrewDetailViewController: UIViewController {
     
     @IBOutlet weak var bloomWaterDistr: UITextField!
     
+    @IBOutlet weak var brewCoffee: UIButton!
+    
     var coffee: Coffee? {
         didSet {
             configureView()
@@ -32,6 +34,7 @@ class BrewDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Utilities.styleFilledButton(button: brewCoffee)
         configureView()
     }
     

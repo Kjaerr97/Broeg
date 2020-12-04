@@ -26,6 +26,9 @@ class BrewTableViewController: UITableViewController {
 
     }
     
+    
+    
+    
     func fetchCoffeeData() {
         let user = Auth.auth().currentUser?.uid
         let ref = db.collection("users").document(user ?? "").collection("coffeeList")

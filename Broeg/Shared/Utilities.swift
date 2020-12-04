@@ -17,7 +17,7 @@ class Utilities {
         
         buttomLine.frame = CGRect(x: 0,y: textfield.frame.height - 2, width: textfield.frame.width, height: 2)
         
-        buttomLine.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1).cgColor
+        buttomLine.backgroundColor = UIColor.init(red: 50/255, green: 50/255, blue: 155/255, alpha: 1).cgColor
         
         // remove border on textfield
         textfield.borderStyle = .none
@@ -30,7 +30,7 @@ class Utilities {
     static func styleFilledButton(  button: UIButton) {
         
         // filled rounded corner style
-        button.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1)
+        button.backgroundColor = UIColor.blue
         button.layer.cornerRadius = 25.0
         button.tintColor = UIColor.white
         
