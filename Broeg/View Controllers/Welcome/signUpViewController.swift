@@ -128,9 +128,6 @@ class signUpViewController: UIViewController {
     }
     
     // using file "Constants"
-    // TODO: read up on the Constants file or find a new way to transition
-    // youtube link: https://www.youtube.com/watch?v=1HN7usMROt8&t=1894s&ab_channel=CodeWithChris
-    // from 1:10:05
     func transitionToHome() {
         let navigationController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.UINavigationController) as? UINavigationController
         
