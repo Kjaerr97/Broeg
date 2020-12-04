@@ -50,7 +50,6 @@ class BrewTableViewController: UITableViewController {
                     self.coffeeList.append(coffee!)
                     self.sortCoffeeList()
                     self.dGroup.leave()
-                    
             }
                 for element in self.coffeeList {
                     print(element.name)
@@ -60,8 +59,6 @@ class BrewTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
     }
-        
-        
 }
     
     

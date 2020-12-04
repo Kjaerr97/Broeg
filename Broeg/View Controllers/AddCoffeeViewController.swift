@@ -57,8 +57,6 @@ class AddCoffeeViewController: UIViewController {
                         "bloomTime": bloomTime,
                         "isFavorite": false
                     ] as [String : Any]
-                    
-                    
                     ref.addDocument(data: dict)
                     dGroup.wait()
                     
